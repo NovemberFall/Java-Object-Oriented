@@ -1,0 +1,620 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>4. callback by Interface · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="comparableInterface.html" />
+    
+    
+    <link rel="prev" href="interface.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Java Syntax
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="intro.html">
+            
+                <a href="intro.html">
+            
+                    
+                    Chapter1：Class Object-Oriented
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="ConceptOfInheritance.html">
+            
+                <a href="ConceptOfInheritance.html">
+            
+                    
+                    1. Concept Of Inheritance
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="Abstract_class.html">
+            
+                <a href="Abstract_class.html">
+            
+                    
+                    2. Abstract Class
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="interface.html">
+            
+                <a href="interface.html">
+            
+                    
+                    3. Interface
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.4" data-path="callback.html">
+            
+                <a href="callback.html">
+            
+                    
+                    4. callback by Interface
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="comparableInterface.html">
+            
+                <a href="comparableInterface.html">
+            
+                    
+                    5. comparable Interface
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="HierarchyOfExceptionClasses.html">
+            
+                <a href="HierarchyOfExceptionClasses.html">
+            
+                    
+                    5. Hierarchy Of ExceptionClasses
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../ch2/intro.html">
+            
+                <a href="../ch2/intro.html">
+            
+                    
+                    Chapter2：I/O Stream
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../ch2/IOstream-1.html">
+            
+                <a href="../ch2/IOstream-1.html">
+            
+                    
+                    1. IO Stream 1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../ch2/IOstream-2.html">
+            
+                <a href="../ch2/IOstream-2.html">
+            
+                    
+                    2. IO Stream 2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../ch2/outputStream.html">
+            
+                <a href="../ch2/outputStream.html">
+            
+                    
+                    3. Output Stream
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../ch2/byteStream.html">
+            
+                <a href="../ch2/byteStream.html">
+            
+                    
+                    4. byte Stream
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../ch3/intro.html">
+            
+                <a href="../ch3/intro.html">
+            
+                    
+                    Chapter3：Array|ArrayList|LinkedList
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../ch3/arr.html">
+            
+                <a href="../ch3/arr.html">
+            
+                    
+                    1. Array
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../ch3/arrList.html">
+            
+                <a href="../ch3/arrList.html">
+            
+                    
+                    2. ArrayList
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../ch3/LinkedList.html">
+            
+                <a href="../ch3/LinkedList.html">
+            
+                    
+                    3. LinkedList
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../ch4/intro.html">
+            
+                <a href="../ch4/intro.html">
+            
+                    
+                    Chapter4：Lambda
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../ch4/lam1.html">
+            
+                <a href="../ch4/lam1.html">
+            
+                    
+                    1. Lambda Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../ch4/lambda_NestedBlocks.html">
+            
+                <a href="../ch4/lambda_NestedBlocks.html">
+            
+                    
+                    2. Lambda NestedBlocks
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Concurrence | Threading
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Networking Programming
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../end/SUMMARY.html">
+            
+                <a href="../end/SUMMARY.html">
+            
+                    
+                    End
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >4. callback by Interface</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="4-callback-by-interface">4. callback by Interface</h1>
+<h1 id="using-interfaces-for-callbacks">Using Interfaces for Callbacks</h1>
+<ul>
+<li><p>When collecting rectangles, we might give it a method for computing the area of a rectangle. 
+When collecting cars, we might give it a method for getting the car&#x2019;s price.</p>
+</li>
+<li><p>Such a method is called a <strong>callback</strong>. 
+A callback is a mechanism for bundling up a block of code so that it can be invoked at a later time.</p>
+</li>
+</ul>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">Measurer</span>
+</span>{
+    <span class="hljs-comment">/**
+      Computes the measure of an object.
+      <span class="hljs-doctag">@param</span> anObject the object to be measured
+      <span class="hljs-doctag">@return</span> the measure
+   */</span>
+   <span class="hljs-function"><span class="hljs-keyword">double</span> <span class="hljs-title">measure</span><span class="hljs-params">(Object anObject)</span></span>;
+}
+
+<span class="hljs-comment">/**
+   Objects of this class measure rectangles by area.
+*/</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">AreaMeasurer</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Measurer</span>
+</span>{
+    <span class="hljs-comment">//Such a method is called a **callback**.</span>
+   <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">double</span> <span class="hljs-title">measure</span><span class="hljs-params">(Object anObject)</span>
+   </span>{
+      Rectangle aRectangle = (Rectangle) anObject;
+      <span class="hljs-keyword">double</span> area = aRectangle.getWidth() * aRectangle.getHeight();
+      <span class="hljs-keyword">return</span> area;
+   }
+}
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Data</span>
+</span>{
+   <span class="hljs-comment">/**
+      Computes the average of the measures of the given objects.
+      <span class="hljs-doctag">@param</span> objects an array of objects
+      <span class="hljs-doctag">@param</span> meas the measurer for the objects
+      <span class="hljs-doctag">@return</span> the average of the measures
+   */</span>
+   <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">double</span> <span class="hljs-title">average</span><span class="hljs-params">(Object[] objects, Measurer meas)</span>
+   </span>{
+      <span class="hljs-keyword">double</span> sum = <span class="hljs-number">0</span>;
+      <span class="hljs-keyword">for</span> (Object obj : objects)
+      {
+         sum = sum + meas.measure(obj);
+      }
+      <span class="hljs-keyword">if</span> (objects.length &gt; <span class="hljs-number">0</span>) { <span class="hljs-keyword">return</span> sum / objects.length; }
+      <span class="hljs-keyword">else</span> { <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>; }
+   }
+}
+
+<span class="hljs-comment">/**
+   This program demonstrates the use of a Measurer.
+*/</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MeasurerTester</span>
+</span>{
+   <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span>
+   </span>{
+      Measurer areaMeas = <span class="hljs-keyword">new</span> AreaMeasurer();
+
+      Rectangle[] rects = <span class="hljs-keyword">new</span> Rectangle[] 
+         {
+            <span class="hljs-keyword">new</span> Rectangle(<span class="hljs-number">5</span>, <span class="hljs-number">10</span>, <span class="hljs-number">20</span>, <span class="hljs-number">30</span>),
+            <span class="hljs-keyword">new</span> Rectangle(<span class="hljs-number">10</span>, <span class="hljs-number">20</span>, <span class="hljs-number">30</span>, <span class="hljs-number">40</span>),
+            <span class="hljs-keyword">new</span> Rectangle(<span class="hljs-number">20</span>, <span class="hljs-number">30</span>, <span class="hljs-number">5</span>, <span class="hljs-number">15</span>)
+         };
+
+      <span class="hljs-keyword">double</span> averageArea = Data.average(rects, areaMeas);
+      System.out.println(<span class="hljs-string">&quot;Average area: &quot;</span> + averageArea);
+      System.out.println(<span class="hljs-string">&quot;Expected: 625&quot;</span>);
+   }
+}
+<span class="hljs-comment">/*
+output:
+Average area: 625
+Expected: 625 &#xCD;
+ */</span>
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="interface.html" class="navigation navigation-prev " aria-label="Previous page: 3. Interface">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="comparableInterface.html" class="navigation navigation-next " aria-label="Next page: 5. comparable Interface">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"4. callback by Interface","level":"1.2.4","depth":2,"next":{"title":"5. comparable Interface","level":"1.2.5","depth":2,"path":"ch1/comparableInterface.md","ref":"ch1/comparableInterface.md","articles":[]},"previous":{"title":"3. Interface","level":"1.2.3","depth":2,"path":"ch1/interface.md","ref":"ch1/interface.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["expandable-chapters"],"pluginsConfig":{"expandable-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css"}},"file":{"path":"ch1/callback.md","mtime":"2020-03-26T06:58:21.377Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-03-26T07:31:27.832Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
