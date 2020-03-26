@@ -126,7 +126,7 @@ Measurable meas = account; // OK
 ### `Casting from Interfaces to Classes`
 
 - Consider this method that returns the object with the larger measure:
-- 
+
 ```java
 public static Measurable larger(Measurable obj1, Measurable obj2) {
     if (obj1.getMeasure() > obj2.getMeasure()) {
