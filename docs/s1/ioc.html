@@ -1,0 +1,866 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>2. What is Inversion of Control? · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="DI.html" />
+    
+    
+    <link rel="prev" href="ec.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Java Syntax
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../ch1/intro.html">
+            
+                <a href="../ch1/intro.html">
+            
+                    
+                    Chapter1：Class Object-Oriented
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../ch1/ConceptOfInheritance.html">
+            
+                <a href="../ch1/ConceptOfInheritance.html">
+            
+                    
+                    1. Concept Of Inheritance
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../ch1/Abstract_class.html">
+            
+                <a href="../ch1/Abstract_class.html">
+            
+                    
+                    2. Abstract Class
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../ch1/interface.html">
+            
+                <a href="../ch1/interface.html">
+            
+                    
+                    3. Interface
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../ch1/callback.html">
+            
+                <a href="../ch1/callback.html">
+            
+                    
+                    4. callback by Interface
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../ch1/comparableInterface.html">
+            
+                <a href="../ch1/comparableInterface.html">
+            
+                    
+                    5. comparable Interface
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../ch1/HierarchyOfExceptionClasses.html">
+            
+                <a href="../ch1/HierarchyOfExceptionClasses.html">
+            
+                    
+                    5. Hierarchy Of ExceptionClasses
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../ch2/intro.html">
+            
+                <a href="../ch2/intro.html">
+            
+                    
+                    Chapter2：I/O Stream
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../ch2/IOstream-1.html">
+            
+                <a href="../ch2/IOstream-1.html">
+            
+                    
+                    1. IO Stream 1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../ch2/IOstream-2.html">
+            
+                <a href="../ch2/IOstream-2.html">
+            
+                    
+                    2. IO Stream 2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../ch2/outputStream.html">
+            
+                <a href="../ch2/outputStream.html">
+            
+                    
+                    3. Output Stream
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../ch2/byteStream.html">
+            
+                <a href="../ch2/byteStream.html">
+            
+                    
+                    4. byte Stream
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../ch3/intro.html">
+            
+                <a href="../ch3/intro.html">
+            
+                    
+                    Chapter3：Array|ArrayList|LinkedList
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../ch3/arr.html">
+            
+                <a href="../ch3/arr.html">
+            
+                    
+                    1. Array
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../ch3/arrList.html">
+            
+                <a href="../ch3/arrList.html">
+            
+                    
+                    2. ArrayList
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../ch3/LinkedList.html">
+            
+                <a href="../ch3/LinkedList.html">
+            
+                    
+                    3. LinkedList
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../ch4/intro.html">
+            
+                <a href="../ch4/intro.html">
+            
+                    
+                    Chapter4：Lambda
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../ch4/lam1.html">
+            
+                <a href="../ch4/lam1.html">
+            
+                    
+                    1. Lambda Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../ch4/lambda_NestedBlocks.html">
+            
+                <a href="../ch4/lambda_NestedBlocks.html">
+            
+                    
+                    2. Lambda NestedBlocks
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Concurrence | Threading
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Networking Programming
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    SpringMVC | SpringBoot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="into.html">
+            
+                <a href="into.html">
+            
+                    
+                    Spring
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.2.1" data-path="ec.html">
+            
+                <a href="ec.html">
+            
+                    
+                    1. Environment Configuration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="4.2.2" data-path="ioc.html">
+            
+                <a href="ioc.html">
+            
+                    
+                    2. What is Inversion of Control?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2.3" data-path="DI.html">
+            
+                <a href="DI.html">
+            
+                    
+                    3. Spring Dependency Injection
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../end/SUMMARY.html">
+            
+                <a href="../end/SUMMARY.html">
+            
+                    
+                    End
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >2. What is Inversion of Control?</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="2-what-is-inversion-of-control">2. What is Inversion of Control?</h1>
+<ul>
+<li><p>Inversion of Control (IoC)</p>
+<pre><code> -  The approach of outsourcing the construction and management of objects
+</code></pre></li>
+<li><p>Coding Scenario</p>
+</li>
+</ul>
+<h2 id=""><img src="img/2019-08-30-20-19-21.png" alt=""></h2>
+<ul>
+<li><p>Code Demo</p>
+<ul>
+<li><p>MyApp.java : main method</p>
+</li>
+<li><p>BaseballCoach.java</p>
+</li>
+<li><p>Coach.java: interface after refactoring</p>
+</li>
+<li><p>TrackCoach.java</p>
+</li>
+</ul>
+</li>
+<li><p>create a package <code>com.luv2code.springdemo</code></p>
+</li>
+<li><p>create a new class: BaseballCoach</p>
+</li>
+</ul>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> com.luv2code.springdemo;
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">BaseBallCoach</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getDailyWorkout</span><span class="hljs-params">()</span></span>{
+        <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;Spend 30 minutes on batting practice&quot;</span>;
+    }
+}
+</code></pre>
+<ul>
+<li>create <code>MyApp</code>, this is a main method</li>
+</ul>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MyApp</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+        <span class="hljs-comment">// create the object</span>
+        <span class="hljs-comment">// Coach theCoach = new BaseballCoach();</span>
+        BaseBallCoach theCoach = <span class="hljs-keyword">new</span> BaseBallCoach();
+
+        <span class="hljs-comment">// use the object</span>
+        System.out.println(theCoach.getDailyWorkout());
+    }
+}
+</code></pre>
+<ul>
+<li>run the main method</li>
+</ul>
+<h2 id=""><img src="img/2019-08-31-05-48-12.png" alt=""></h2>
+<ul>
+<li>every coach is going to have a method called <code>getDailyWorkout</code></li>
+</ul>
+<p>:star: Refactoring code: Create an Interface</p>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">Coach</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getDailyWorkout</span><span class="hljs-params">()</span></span>;
+}
+</code></pre>
+<ul>
+<li>Refactoring code: Implementing an Interface</li>
+</ul>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">BaseBallCoach</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Coach</span></span>{
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getDailyWorkout</span><span class="hljs-params">()</span></span>{
+        <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;Spend 30 minutes on batting practice&quot;</span>;
+    }
+}
+</code></pre>
+<p><img src="img/2019-08-31-05-57-07.png" alt=""></p>
+<ul>
+<li>get the same result</li>
+</ul>
+<hr>
+<ul>
+<li>create a TrachCoach</li>
+</ul>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TrachCoach</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Coach</span></span>{
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getDailyWorkout</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;Run a hard 5k&quot;</span>;
+    }
+}
+</code></pre>
+<ul>
+<li>MyApp</li>
+</ul>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MyApp</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+        Coach theCoach = <span class="hljs-keyword">new</span> TrachCoach();
+        <span class="hljs-comment">// use the object</span>
+        System.out.println(theCoach.getDailyWorkout());
+    }
+}
+</code></pre>
+<h2 id=""><img src="img/2019-08-31-06-01-42.png" alt=""></h2>
+<p>:star: so far, <code>Coach theCoach = new TrachCoach();</code> is still hardcoded :-(</p>
+<hr>
+<ul>
+<li><code>Ideal Solution</code></li>
+</ul>
+<h2 id=""><img src="img/2019-08-31-06-07-26.png" alt=""></h2>
+<h2 id=""><img src="img/2019-08-31-06-09-15.png" alt=""></h2>
+<ul>
+<li>Spring Container
+<img src="img/2019-08-31-06-09-38.png" alt=""></li>
+</ul>
+<hr>
+<ul>
+<li>Configuring Spring Container</li>
+</ul>
+<p>:star: XML configuration file (legacy, but most legacy apps still use this)</p>
+<p>:star: Java Annotations (modern)</p>
+<h2 id="star-java-source-code-modern">:star: Java Source Code (modern)</h2>
+<h3 id="spring-development-process"><code>Spring Development Process</code></h3>
+<ol>
+<li>Configure your Spring Beans</li>
+</ol>
+<h2 id=""><img src="img/2019-08-31-06-14-23.png" alt=""></h2>
+<h2 id=""><img src="img/2019-08-31-06-16-02.png" alt=""></h2>
+<ol>
+<li>Create a Spring Container</li>
+</ol>
+<h2 id=""><img src="img/2019-08-31-06-16-33.png" alt=""></h2>
+<h2 id=""><img src="img/2019-08-31-06-17-19.png" alt=""></h2>
+<ol>
+<li>Retrieve Beans from Spring Container</li>
+</ol>
+<h2 id=""><img src="img/2019-08-31-06-18-16.png" alt=""></h2>
+<h2 id=""><img src="img/2019-08-31-06-19-42.png" alt=""></h2>
+<hr>
+<h3 id="what-is-a-spring-bean"><code>What is a Spring Bean?</code></h3>
+<p>:star: A &quot;Spring Bean&quot; is simply a Java object.</p>
+<ul>
+<li><p>When Java objects are created by the Spring Container, then Spring refers to them as &quot;Spring Beans&quot;.</p>
+</li>
+<li><p>Spring Beans are created from normal Java classes .... just like Java objects.</p>
+</li>
+</ul>
+<hr>
+<h3 id="spring-inversion-of-control"><code>Spring Inversion of Control</code></h3>
+<ul>
+<li>copy a <code>applicationContext.xml</code> into <code>com.luv2code.srpingdemo</code> package</li>
+</ul>
+<pre><code class="lang-xml"><span class="php"><span class="hljs-meta">&lt;?</span>xml version=<span class="hljs-string">&quot;1.0&quot;</span> encoding=<span class="hljs-string">&quot;UTF-8&quot;</span><span class="hljs-meta">?&gt;</span></span>
+<span class="hljs-tag">&lt;<span class="hljs-name">beans</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">&quot;http://www.springframework.org/schema/beans&quot;</span>
+    <span class="hljs-attr">xmlns:xsi</span>=<span class="hljs-string">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span> 
+    <span class="hljs-attr">xmlns:context</span>=<span class="hljs-string">&quot;http://www.springframework.org/schema/context&quot;</span>
+    <span class="hljs-attr">xsi:schemaLocation</span>=<span class="hljs-string">&quot;http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd&quot;</span>&gt;</span>
+
+    <span class="hljs-comment">&lt;!-- Define your beans here --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">bean</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;myCoach&quot;</span>
+            <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;com.luv2code.springdemo.TrachCoach&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">bean</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">beans</span>&gt;</span>
+</code></pre>
+<p>:star: <code>id=&quot;myCoach&quot; class=&quot;com.luv2code.springdemo.TrachCoach&quot;</code></p>
+<hr>
+<ul>
+<li>create a class <code>HelloSpringApp</code>.java</li>
+</ul>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">HelloSpringApp</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+        <span class="hljs-comment">//load the spring configuration file</span>
+        ClassPathXmlApplicationContext context = 
+                <span class="hljs-keyword">new</span> ClassPathXmlApplicationContext(<span class="hljs-string">&quot;applicationContext.xml&quot;</span>);
+
+        <span class="hljs-comment">//retrieve bean from spring container</span>
+        Coach theCoach = context.getBean(<span class="hljs-string">&quot;myCoach&quot;</span>, Coach.class);
+
+        <span class="hljs-comment">//call methods on the bean</span>
+        System.out.println(theCoach.getDailyWorkout());
+
+        <span class="hljs-comment">//close the context</span>
+        context.close();
+    }
+}
+</code></pre>
+<ul>
+<li>run the <code>HelloSpringApp</code></li>
+</ul>
+<p><img src="img/2019-08-31-06-47-57.png" alt=""></p>
+<hr>
+<ul>
+<li>so we change the bean </li>
+</ul>
+<pre><code class="lang-xml">      <span class="hljs-tag">&lt;<span class="hljs-name">bean</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;myCoach&quot;</span>
+            <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;com.luv2code.springdemo.BaseballCoach&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">bean</span>&gt;</span>
+</code></pre>
+<ul>
+<li><p>we change the <code>TrackCoach</code> to <code>BaseballCoah</code></p>
+</li>
+<li><p>run the main method:</p>
+</li>
+</ul>
+<p><img src="img/2019-08-31-07-26-54.png" alt=""></p>
+<hr>
+<h3 id="why-do-we-specify-the-coach-interface-in-getbean"><code>Why do we specify the Coach interface in getBean()?</code></h3>
+<p><code>Coach theCoach = context.getBean(&quot;myCoach&quot;, Coach.class);</code></p>
+<p>:star: When we pass the interface to the method, behind the scenes Spring will cast the object for you.</p>
+<h3 id="practice-activity-1---inversion-of-control-with-xml-configuration"><code>Practice Activity #1 - Inversion of Control with XML Configuration</code></h3>
+<ol>
+<li><p>Define a new implementation for the Coach interface. You can use whatever sport you would like.</p>
+</li>
+<li><p>Reference your new implementation in the Spring config file.</p>
+</li>
+<li><p>Test your application to verify you are retrieving information from your new Coach implementation.</p>
+</li>
+<li><p>create a <code>BasketballCoach</code></p>
+</li>
+</ol>
+<pre><code class="lang-java">
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">BasketballCoach</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Coach</span> </span>{
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getDailyWorkout</span><span class="hljs-params">()</span></span>{
+        <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;Spend 1 hour on shooting basketball&quot;</span>;
+    }
+}
+</code></pre>
+<ul>
+<li>run the <code>HelloSpringApp.java</code>&apos;s main method:</li>
+</ul>
+<p><img src="img/2019-08-31-07-40-53.png" alt=""></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="ec.html" class="navigation navigation-prev " aria-label="Previous page: 1. Environment Configuration">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="DI.html" class="navigation navigation-next " aria-label="Next page: 3. Spring Dependency Injection">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"2. What is Inversion of Control?","level":"4.2.2","depth":2,"next":{"title":"3. Spring Dependency Injection","level":"4.2.3","depth":2,"path":"s1/DI.md","ref":"s1/DI.md","articles":[]},"previous":{"title":"1. Environment Configuration","level":"4.2.1","depth":2,"path":"s1/ec.md","ref":"s1/ec.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["expandable-chapters"],"pluginsConfig":{"expandable-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css"}},"file":{"path":"s1/ioc.md","mtime":"2020-04-01T23:25:07.947Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-04-01T23:29:42.786Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,1092 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>3. Spring Dependency Injection · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../end/SUMMARY.html" />
+    
+    
+    <link rel="prev" href="ioc.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Java Syntax
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../ch1/intro.html">
+            
+                <a href="../ch1/intro.html">
+            
+                    
+                    Chapter1：Class Object-Oriented
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../ch1/ConceptOfInheritance.html">
+            
+                <a href="../ch1/ConceptOfInheritance.html">
+            
+                    
+                    1. Concept Of Inheritance
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../ch1/Abstract_class.html">
+            
+                <a href="../ch1/Abstract_class.html">
+            
+                    
+                    2. Abstract Class
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../ch1/interface.html">
+            
+                <a href="../ch1/interface.html">
+            
+                    
+                    3. Interface
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../ch1/callback.html">
+            
+                <a href="../ch1/callback.html">
+            
+                    
+                    4. callback by Interface
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../ch1/comparableInterface.html">
+            
+                <a href="../ch1/comparableInterface.html">
+            
+                    
+                    5. comparable Interface
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../ch1/HierarchyOfExceptionClasses.html">
+            
+                <a href="../ch1/HierarchyOfExceptionClasses.html">
+            
+                    
+                    5. Hierarchy Of ExceptionClasses
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../ch2/intro.html">
+            
+                <a href="../ch2/intro.html">
+            
+                    
+                    Chapter2：I/O Stream
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../ch2/IOstream-1.html">
+            
+                <a href="../ch2/IOstream-1.html">
+            
+                    
+                    1. IO Stream 1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../ch2/IOstream-2.html">
+            
+                <a href="../ch2/IOstream-2.html">
+            
+                    
+                    2. IO Stream 2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../ch2/outputStream.html">
+            
+                <a href="../ch2/outputStream.html">
+            
+                    
+                    3. Output Stream
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../ch2/byteStream.html">
+            
+                <a href="../ch2/byteStream.html">
+            
+                    
+                    4. byte Stream
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../ch3/intro.html">
+            
+                <a href="../ch3/intro.html">
+            
+                    
+                    Chapter3：Array|ArrayList|LinkedList
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../ch3/arr.html">
+            
+                <a href="../ch3/arr.html">
+            
+                    
+                    1. Array
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../ch3/arrList.html">
+            
+                <a href="../ch3/arrList.html">
+            
+                    
+                    2. ArrayList
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../ch3/LinkedList.html">
+            
+                <a href="../ch3/LinkedList.html">
+            
+                    
+                    3. LinkedList
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../ch4/intro.html">
+            
+                <a href="../ch4/intro.html">
+            
+                    
+                    Chapter4：Lambda
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../ch4/lam1.html">
+            
+                <a href="../ch4/lam1.html">
+            
+                    
+                    1. Lambda Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../ch4/lambda_NestedBlocks.html">
+            
+                <a href="../ch4/lambda_NestedBlocks.html">
+            
+                    
+                    2. Lambda NestedBlocks
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Concurrence | Threading
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Networking Programming
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    SpringMVC | SpringBoot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="into.html">
+            
+                <a href="into.html">
+            
+                    
+                    Spring
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.2.1" data-path="ec.html">
+            
+                <a href="ec.html">
+            
+                    
+                    1. Environment Configuration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2.2" data-path="ioc.html">
+            
+                <a href="ioc.html">
+            
+                    
+                    2. What is Inversion of Control?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="4.2.3" data-path="DI.html">
+            
+                <a href="DI.html">
+            
+                    
+                    3. Spring Dependency Injection
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../end/SUMMARY.html">
+            
+                <a href="../end/SUMMARY.html">
+            
+                    
+                    End
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >3. Spring Dependency Injection</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="3-spring-dependency-injection">3. Spring Dependency Injection</h1>
+<ul>
+<li><p>The dependency inversion principle.</p>
+<pre><code>  - The client delegates to calls to another object the responsibility of providing its dependencies.
+</code></pre></li>
+</ul>
+<h2 id=""><img src="img/2019-08-31-08-50-14.png" alt=""></h2>
+<h2 id=""><img src="img/2019-08-31-08-54-03.png" alt=""></h2>
+<ul>
+<li>Spring Container</li>
+</ul>
+<h2 id=""><img src="img/2019-08-31-08-55-08.png" alt=""></h2>
+<ul>
+<li>Demo Example:</li>
+</ul>
+<h2 id=""><img src="img/2019-08-31-08-58-07.png" alt=""></h2>
+<p>:star: Injection Types </p>
+<ul>
+<li><p>There are many types of injection with Spring&#x2028;</p>
+</li>
+<li><p>We will cover the two most common</p>
+<ul>
+<li><p>Constructor Injection</p>
+</li>
+<li><p>Setter Injection</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="development-process---constructor-injection"><code>Development Process - Constructor Injection</code></h3>
+<ol>
+<li>Define the dependency interface and class</li>
+</ol>
+<p><img src="img/2019-08-31-10-13-56.png" alt=""></p>
+<ul>
+<li>create <code>FortuneService</code>.java</li>
+</ul>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> com.luv2code.springdemo;
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">FortuneService</span> </span>{
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getFortune</span><span class="hljs-params">()</span></span>;
+}
+</code></pre>
+<hr>
+<ol>
+<li>Create a constructor in your class for injections</li>
+</ol>
+<p><img src="img/2019-08-31-10-19-08.png" alt=""></p>
+<ul>
+<li>create <code>HappyFortuneService</code>.java</li>
+</ul>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> com.luv2code.springdemo;
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">HappyFortuneService</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">FortuneService</span></span>{
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getFortune</span><span class="hljs-params">()</span></span>{
+        <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;Today is your lucky day!&quot;</span>;
+    }
+}
+</code></pre>
+<ul>
+<li>add a new method <code>` into</code>Coach` interface </li>
+</ul>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">Coach</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getDailyWorkout</span><span class="hljs-params">()</span></span>;   
+    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getDailyFortune</span><span class="hljs-params">()</span></span>;
+}
+</code></pre>
+<hr>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> com.luv2code.springdemo;
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">BaseballCoach</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Coach</span></span>{
+    <span class="hljs-comment">//define a private field for the dependency</span>
+    <span class="hljs-keyword">private</span> FortuneService fortuneService;
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">BaseballCoach</span><span class="hljs-params">()</span></span>{}
+
+    <span class="hljs-comment">//define a constructor for dependency injection</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">BaseballCoach</span><span class="hljs-params">(FortuneService theFortuneService)</span> </span>{
+        fortuneService = theFortuneService;
+    }
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getDailyWorkout</span><span class="hljs-params">()</span></span>{
+        <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;Spend 1 hour on shooting basketball&quot;</span>;
+    }
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getDailyFortune</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-comment">//use my fortuneService to get a fortune</span>
+        <span class="hljs-keyword">return</span> fortuneService.getFortune();
+    }
+}
+</code></pre>
+<hr>
+<ol>
+<li>Configure the dependency injection in Spring config file</li>
+</ol>
+<p><img src="img/2019-08-31-10-19-59.png" alt=""></p>
+<ul>
+<li><p>right clicke <code>HappyFortuneService</code>, <code>copy reference</code></p>
+</li>
+<li><p>paste <code>com.luv2code.springdemo.BaseballCoach</code></p>
+</li>
+<li><p>applicationContext.xml</p>
+</li>
+</ul>
+<pre><code class="lang-xml">    <span class="hljs-tag">&lt;<span class="hljs-name">bean</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;myFortune&quot;</span>
+          <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;com.luv2code.springdemo.HappyFortuneService&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">bean</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">bean</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;myCoach&quot;</span>
+          <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;com.luv2code.springdemo.BaseballCoach&quot;</span>&gt;</span>
+
+            <span class="hljs-comment">&lt;!-- set up constructor injection --&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">constructor-arg</span> <span class="hljs-attr">ref</span>=<span class="hljs-string">&quot;myFortune&quot;</span> /&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">bean</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">beans</span>&gt;</span>
+</code></pre>
+<h2 id=""><img src="img/2019-08-31-11-18-04.png" alt=""></h2>
+<ul>
+<li>updating <code>HelloSpringApp</code></li>
+</ul>
+<pre><code class="lang-java"><span class="hljs-keyword">import</span> org.springframework.context.support.ClassPathXmlApplicationContext;
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">HelloSpringApp</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+        <span class="hljs-comment">//load the spring configuration file</span>
+        ClassPathXmlApplicationContext context = 
+                <span class="hljs-keyword">new</span> ClassPathXmlApplicationContext(<span class="hljs-string">&quot;applicationContext.xml&quot;</span>);
+
+        <span class="hljs-comment">//retrieve bean from spring container</span>
+        Coach theCoach = context.getBean(<span class="hljs-string">&quot;myCoach&quot;</span>, Coach.class);
+
+        <span class="hljs-comment">//call methods on the bean</span>
+        System.out.println(theCoach.getDailyWorkout());
+
+        <span class="hljs-comment">//let&apos;s call our new method for fortunes</span>
+        System.out.println(theCoach.getDailyFortune());
+
+        <span class="hljs-comment">//close the context</span>
+        context.close();
+    }
+}
+</code></pre>
+<ul>
+<li>run the main method:</li>
+</ul>
+<h2 id=""><img src="img/2019-08-31-11-52-02.png" alt=""></h2>
+<ul>
+<li>updating applicationContext.xml</li>
+</ul>
+<pre><code class="lang-xml">    <span class="hljs-tag">&lt;<span class="hljs-name">bean</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;myFortune&quot;</span>
+          <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;com.luv2code.springdemo.HappyFortuneService&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">bean</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">bean</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;myCoach&quot;</span>
+          <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;com.luv2code.springdemo.TrackCoach&quot;</span>&gt;</span>
+            <span class="hljs-comment">&lt;!-- set up constructor injection --&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">constructor-arg</span> <span class="hljs-attr">ref</span>=<span class="hljs-string">&quot;myFortune&quot;</span> /&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">bean</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">beans</span>&gt;</span>
+</code></pre>
+<h2 id=""><img src="img/2019-08-31-11-59-24.png" alt=""></h2>
+<h3 id="setter-injection"><code>Setter Injection</code></h3>
+<p>:star:  Spring Injection Types</p>
+<ul>
+<li><p>Constructor Injection</p>
+</li>
+<li><p>Setter Injection</p>
+</li>
+</ul>
+<p>:star:  Inject dependencies by calling setter method(s) on your class</p>
+<ul>
+<li><p>Development Process - Setter Injection</p>
+</li>
+<li><p>Create setter method(s) in your class for injections</p>
+</li>
+</ul>
+<h2 id=""><img src="img/2019-08-31-12-09-44.png" alt=""></h2>
+<ol>
+<li>Configure the dependency injection in Spring config file</li>
+</ol>
+<h2 id=""><img src="img/2019-08-31-12-10-02.png" alt=""></h2>
+<ul>
+<li>Call setter method on Java class</li>
+</ul>
+<h2 id=""><img src="img/2019-08-31-12-12-14.png" alt=""></h2>
+<ul>
+<li><p>in general, any property name you have, Spring will attempt to make a call to the setter method</p>
+</li>
+<li><p>How Spring Processes your Config File</p>
+</li>
+</ul>
+<p><img src="img/2019-08-31-12-30-14.png" alt=""></p>
+<h3 id="code-demo"><code>Code demo</code></h3>
+<ol>
+<li><p>Create setter method(s) in your class for injections</p>
+</li>
+<li><p>create a class <code>CricketCoach</code></p>
+</li>
+</ol>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> com.luv2code.springdemo;
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">CricketCoach</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Coach</span></span>{
+
+    <span class="hljs-keyword">private</span> FortuneService fortuneService;
+
+    <span class="hljs-comment">//create a no-arg constructor</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">CricketCoach</span><span class="hljs-params">()</span> </span>{
+        System.out.println(<span class="hljs-string">&quot;CricketCoach: inside no-arg constructor&quot;</span>);
+    }
+
+    <span class="hljs-comment">//our setter method</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setFortuneService</span><span class="hljs-params">(FortuneService fortuneService)</span> </span>{
+        System.out.println(<span class="hljs-string">&quot;CricketCoach: inside setter method - setEmailAddress&quot;</span>);
+        <span class="hljs-keyword">this</span>.fortuneService = fortuneService;
+    }
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getDailyWorkout</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;Practice fast bowling for 15 minutes&quot;</span>;
+    }
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getDailyFortune</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> fortuneService.getFortune();
+    }
+}
+</code></pre>
+<hr>
+<ol>
+<li><p>Configure the dependency injection in Spring config file</p>
+</li>
+<li><p>updating <code>applicationContext.xml</code></p>
+</li>
+</ol>
+<pre><code class="lang-xml">    <span class="hljs-comment">&lt;!-- define the dependency   --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">bean</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;myFortuneService&quot;</span>
+          <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;com.luv2code.springdemo.HappyFortuneService&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">bean</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">bean</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;myCoach&quot;</span>
+          <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;com.luv2code.springdemo.TrackCoach&quot;</span>&gt;</span>
+        <span class="hljs-comment">&lt;!-- set up constructor injection --&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">constructor-arg</span> <span class="hljs-attr">ref</span>=<span class="hljs-string">&quot;myFortuneService&quot;</span> /&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">bean</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">bean</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;myCricketCoach&quot;</span>
+        <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;com.luv2code.springdemo.CricketCoach&quot;</span>&gt;</span>
+<span class="hljs-comment">&lt;!--        set up setter injection --&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;fortuneService&quot;</span> <span class="hljs-attr">ref</span>=<span class="hljs-string">&quot;myFortuneService&quot;</span> /&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">bean</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">beans</span>&gt;</span>
+</code></pre>
+<hr>
+<ul>
+<li>create a new class <code>SetterDemoApp</code></li>
+</ul>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> com.luv2code.springdemo;
+
+<span class="hljs-keyword">import</span> org.springframework.context.support.ClassPathXmlApplicationContext;
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SetterDemoApp</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+        <span class="hljs-comment">//load the spring configuration file</span>
+        ClassPathXmlApplicationContext context =
+                <span class="hljs-keyword">new</span> ClassPathXmlApplicationContext(<span class="hljs-string">&quot;applicationContext.xml&quot;</span>);
+
+        <span class="hljs-comment">//retrieve bean from spring container</span>
+        CricketCoach theCoach = context.getBean(<span class="hljs-string">&quot;myCricketCoach&quot;</span>, CricketCoach.class);
+
+        <span class="hljs-comment">//call methods on the bean</span>
+        <span class="hljs-comment">//...let&apos;s come back to this ...</span>
+        System.out.println(theCoach.getDailyWorkout());
+        System.out.println(theCoach.getDailyFortune());
+        <span class="hljs-comment">//close the context</span>
+        context.close();
+    }
+}
+</code></pre>
+<h2 id=""><img src="img/2019-08-31-13-31-43.png" alt=""></h2>
+<h3 id="injecting-literal-values"><code>Injecting Literal Values</code></h3>
+<h2 id=""><img src="img/2019-08-31-13-38-21.png" alt=""></h2>
+<ul>
+<li><p>Development Process</p>
+</li>
+<li><p>Create setter method(s) in your class for injections</p>
+</li>
+</ul>
+<h2 id=""><img src="img/2019-08-31-13-39-12.png" alt=""></h2>
+<ul>
+<li>updating CricketCoach</li>
+</ul>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> com.luv2code.springdemo;
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">CricketCoach</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Coach</span></span>{
+
+    <span class="hljs-keyword">private</span> FortuneService fortuneService;
+
+    <span class="hljs-comment">//add new fields for emailAddress and team</span>
+    <span class="hljs-keyword">private</span> String emailAddress;
+    <span class="hljs-keyword">private</span> String team;
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getEmailAddress</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> emailAddress;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setEmailAddress</span><span class="hljs-params">(String emailAddress)</span> </span>{
+        System.out.println(<span class="hljs-string">&quot;CricketCoach: inside setter method - setEmailAddress&quot;</span>);
+        <span class="hljs-keyword">this</span>.emailAddress = emailAddress;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getTeam</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> team;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setTeam</span><span class="hljs-params">(String team)</span> </span>{
+        System.out.println(<span class="hljs-string">&quot;CricketCoach: inside setter method - setTeam&quot;</span>);
+        <span class="hljs-keyword">this</span>.team = team;
+    }
+
+    <span class="hljs-comment">//create a no-arg constructor</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">CricketCoach</span><span class="hljs-params">()</span> </span>{
+        System.out.println(<span class="hljs-string">&quot;CricketCoach: inside no-arg constructor&quot;</span>);
+    }
+
+    <span class="hljs-comment">//our setter method</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setFortuneService</span><span class="hljs-params">(FortuneService fortuneService)</span> </span>{
+        System.out.println(<span class="hljs-string">&quot;CricketCoach: inside setter method - setFortuneService&quot;</span>);
+        <span class="hljs-keyword">this</span>.fortuneService = fortuneService;
+    }
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getDailyWorkout</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;Practice fast bowling for 15 minutes&quot;</span>;
+    }
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getDailyFortune</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> fortuneService.getFortune();
+    }
+}
+</code></pre>
+<hr>
+<ol>
+<li>Configure the injection in Spring config file</li>
+</ol>
+<h2 id=""><img src="img/2019-08-31-13-40-25.png" alt=""></h2>
+<ul>
+<li>updating <code>applicationContext.xml</code></li>
+</ul>
+<pre><code class="lang-xml">    <span class="hljs-comment">&lt;!-- define the dependency   --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">bean</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;myFortuneService&quot;</span>
+          <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;com.luv2code.springdemo.HappyFortuneService&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">bean</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">bean</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;myCoach&quot;</span>
+          <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;com.luv2code.springdemo.TrackCoach&quot;</span>&gt;</span>
+        <span class="hljs-comment">&lt;!-- set up constructor injection --&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">constructor-arg</span> <span class="hljs-attr">ref</span>=<span class="hljs-string">&quot;myFortuneService&quot;</span> /&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">bean</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">bean</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;myCricketCoach&quot;</span>
+          <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;com.luv2code.springdemo.CricketCoach&quot;</span>&gt;</span>
+        <span class="hljs-comment">&lt;!--        set up setter injection --&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;fortuneService&quot;</span> <span class="hljs-attr">ref</span>=<span class="hljs-string">&quot;myFortuneService&quot;</span> /&gt;</span>
+
+<span class="hljs-comment">&lt;!--       inject literal values --&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;emailAddress&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;thebestcoach@luv2code.com&quot;</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;team&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;Sunrisers Hyderabad&quot;</span>/&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">bean</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">beans</span>&gt;</span>
+</code></pre>
+<ul>
+<li>updating <code>SetterDemoApp</code>
+```java
+package com.luv2code.springdemo;
+import org.springframework.context.support.ClassPathXmlApplicationContext;</li>
+</ul>
+<p>public class SetterDemoApp {
+    public static void main(String[] args) {
+        //load the spring configuration file
+        ClassPathXmlApplicationContext context =
+                new ClassPathXmlApplicationContext(&quot;applicationContext.xml&quot;);</p>
+<pre><code>    //retrieve bean from spring container
+    CricketCoach theCoach = context.getBean(&quot;myCricketCoach&quot;, CricketCoach.class);
+
+    //call methods on the bean
+    //...let&apos;s come back to this ...
+    System.out.println(theCoach.getDailyWorkout());
+    System.out.println(theCoach.getDailyFortune());
+
+    //call our new methods to get the literal values
+    System.out.println(theCoach.getEmailAddress());
+    System.out.println(theCoach.getTeam());
+
+    //close the context
+    context.close();
+}
+</code></pre><p>}</p>
+<pre><code>
+![](img/2019-08-31-14-02-33.png)
+---
+
+
+### `Injecting Valuse from a Properties File`
+
+-  Development Process
+
+1. Create Properties File
+
+![](img/2019-08-31-14-07-51.png)
+---
+
+- create a `sport.properties` file in `src` folder
+
+```properties
+foo.email=myeasycoach@luv2code.com
+foo.team=Royal Challengers Bangalore
+</code></pre><ol>
+<li>Load Properties File in Spring config file</li>
+</ol>
+<h2 id=""><img src="img/2019-08-31-14-08-10.png" alt=""></h2>
+<ol>
+<li>Reference values from Properties File</li>
+</ol>
+<h2 id=""><img src="img/2019-08-31-14-08-23.png" alt=""></h2>
+<ul>
+<li>updating <code>applicationContext.xml</code></li>
+</ul>
+<pre><code class="lang-xml"><span class="hljs-comment">&lt;!--   load the properties file: sport.properties --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">context:property-placeholder</span> <span class="hljs-attr">location</span>=<span class="hljs-string">&quot;classpath:sport.properties&quot;</span>/&gt;</span>
+    <span class="hljs-comment">&lt;!-- define the dependency   --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">bean</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;myFortuneService&quot;</span>
+          <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;com.luv2code.springdemo.HappyFortuneService&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">bean</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">bean</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;myCoach&quot;</span>
+          <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;com.luv2code.springdemo.TrackCoach&quot;</span>&gt;</span>
+        <span class="hljs-comment">&lt;!-- set up constructor injection --&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">constructor-arg</span> <span class="hljs-attr">ref</span>=<span class="hljs-string">&quot;myFortuneService&quot;</span> /&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">bean</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">bean</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;myCricketCoach&quot;</span>
+          <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;com.luv2code.springdemo.CricketCoach&quot;</span>&gt;</span>
+        <span class="hljs-comment">&lt;!--        set up setter injection --&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;fortuneService&quot;</span> <span class="hljs-attr">ref</span>=<span class="hljs-string">&quot;myFortuneService&quot;</span> /&gt;</span>
+
+        <span class="hljs-comment">&lt;!--       inject literal values --&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;emailAddress&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;${foo.email}&quot;</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;team&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;${foo.team}&quot;</span>/&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">bean</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">beans</span>&gt;</span>
+</code></pre>
+<ul>
+<li>Run <code>SetterDemoApp.java</code></li>
+</ul>
+<h2 id=""><img src="img/2019-08-31-14-21-32.png" alt=""></h2>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="ioc.html" class="navigation navigation-prev " aria-label="Previous page: 2. What is Inversion of Control?">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../end/SUMMARY.html" class="navigation navigation-next " aria-label="Next page: End">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"3. Spring Dependency Injection","level":"4.2.3","depth":2,"next":{"title":"End","level":"5.1","depth":1,"path":"end/SUMMARY.md","ref":"end/SUMMARY.md","articles":[]},"previous":{"title":"2. What is Inversion of Control?","level":"4.2.2","depth":2,"path":"s1/ioc.md","ref":"s1/ioc.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["expandable-chapters"],"pluginsConfig":{"expandable-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css"}},"file":{"path":"s1/DI.md","mtime":"2020-04-01T23:28:35.186Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-04-01T23:29:42.786Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
