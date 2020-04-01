@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>3. Interface · GitBook</title>
+        <title>2. Create a Project with SpringBoot initializr · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -53,10 +53,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="callback.html" />
+    <link rel="next" href="../end/SUMMARY.html" />
     
     
-    <link rel="prev" href="Abstract_class.html" />
+    <link rel="prev" href="sbIntro.html" />
     
 
     </head>
@@ -98,9 +98,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2" data-path="intro.html">
+        <li class="chapter " data-level="1.2" data-path="../ch1/intro.html">
             
-                <a href="intro.html">
+                <a href="../ch1/intro.html">
             
                     
                     Chapter1：Class Object-Oriented
@@ -112,9 +112,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.2.1" data-path="ConceptOfInheritance.html">
+        <li class="chapter " data-level="1.2.1" data-path="../ch1/ConceptOfInheritance.html">
             
-                <a href="ConceptOfInheritance.html">
+                <a href="../ch1/ConceptOfInheritance.html">
             
                     
                     1. Concept Of Inheritance
@@ -125,9 +125,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.2" data-path="Abstract_class.html">
+        <li class="chapter " data-level="1.2.2" data-path="../ch1/Abstract_class.html">
             
-                <a href="Abstract_class.html">
+                <a href="../ch1/Abstract_class.html">
             
                     
                     2. Abstract Class
@@ -138,9 +138,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.2.3" data-path="interface.html">
+        <li class="chapter " data-level="1.2.3" data-path="../ch1/interface.html">
             
-                <a href="interface.html">
+                <a href="../ch1/interface.html">
             
                     
                     3. Interface
@@ -151,9 +151,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.4" data-path="callback.html">
+        <li class="chapter " data-level="1.2.4" data-path="../ch1/callback.html">
             
-                <a href="callback.html">
+                <a href="../ch1/callback.html">
             
                     
                     4. callback by Interface
@@ -164,9 +164,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.5" data-path="comparableInterface.html">
+        <li class="chapter " data-level="1.2.5" data-path="../ch1/comparableInterface.html">
             
-                <a href="comparableInterface.html">
+                <a href="../ch1/comparableInterface.html">
             
                     
                     5. comparable Interface
@@ -177,9 +177,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.6" data-path="HierarchyOfExceptionClasses.html">
+        <li class="chapter " data-level="1.2.6" data-path="../ch1/HierarchyOfExceptionClasses.html">
             
-                <a href="HierarchyOfExceptionClasses.html">
+                <a href="../ch1/HierarchyOfExceptionClasses.html">
             
                     
                     5. Hierarchy Of ExceptionClasses
@@ -487,9 +487,9 @@
             
         </li>
     
-        <li class="chapter " data-level="4.3" data-path="../sb/into.html">
+        <li class="chapter " data-level="4.3" data-path="into.html">
             
-                <a href="../sb/into.html">
+                <a href="into.html">
             
                     
                     SpringBoot
@@ -501,9 +501,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="4.3.1" data-path="../sb/sbIntro.html">
+        <li class="chapter " data-level="4.3.1" data-path="sbIntro.html">
             
-                <a href="../sb/sbIntro.html">
+                <a href="sbIntro.html">
             
                     
                     1. What is SpringBoot
@@ -514,9 +514,9 @@
             
         </li>
     
-        <li class="chapter " data-level="4.3.2" data-path="../sb/init.html">
+        <li class="chapter active" data-level="4.3.2" data-path="init.html">
             
-                <a href="../sb/init.html">
+                <a href="init.html">
             
                     
                     2. Create a Project with SpringBoot initializr
@@ -582,7 +582,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >3. Interface</a>
+        <a href=".." >2. Create a Project with SpringBoot initializr</a>
     </h1>
 </div>
 
@@ -597,138 +597,7 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="3-interface">3. Interface</h1>
-<h3 id="an-interface-type-is-similar-to-a-class-but-there-are-several-important-differences"><code>An interface type is similar to a class, but there are several important differences:</code></h3>
-<ul>
-<li><p>An interface type doesn&apos;t have instance variables</p>
-</li>
-<li><p>Methods in an interface must be abstract(that is, without an implementation) </p>
-</li>
-<li><p>All methods in an interface type are automatically public</p>
-</li>
-<li><p>An interface type has no constructor. Interface are not classes, and you cannot construct objects of an interface type.</p>
-</li>
-</ul>
-<h3 id="implementing-an-interface-type"><code>Implementing an Interface Type:</code></h3>
-<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">BankAccount</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Measurable</span>
-</span>{
-        ...
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">double</span> <span class="hljs-title">getMeasure</span><span class="hljs-params">()</span>
-    </span>{
-        <span class="hljs-keyword">return</span> balance;
-    } 
-}
-</code></pre>
-<ul>
-<li>Once the BankAccount class implements the Measurable interface type, 
-BankAccount objects are instances of the Measurable type:</li>
-</ul>
-<pre><code class="lang-java">Measurable obj = <span class="hljs-keyword">new</span> BankAccount();  <span class="hljs-comment">//OK</span>
-</code></pre>
-<p><img src="img/1.png" alt=""></p>
-<h3 id="further-on-the-source-code-in-bigjava-section1">further on, the source code in bigjava section_1</h3>
-<hr>
-<h3 id="a-class-can-implement-more-than-one-interface-for-example"><code>A class can implement more than one interface, for example</code></h3>
-<pre><code class="lang-java">
-<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Country</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Measurable</span>, <span class="hljs-title">Named</span>
-
-<span class="hljs-title">public</span> <span class="hljs-title">interface</span> <span class="hljs-title">Named</span> </span>{
-    <span class="hljs-function">String <span class="hljs-title">getName</span><span class="hljs-params">()</span></span>; 
-}
-</code></pre>
-<hr>
-<h3 id="constants-in-interfaces"><code>Constants in Interfaces</code></h3>
-<ul>
-<li>Interfaces cannot have instance variables, but it is legal to specify constants. 
-When declaring a constant in an interface, you can (and should) omit the reserved words public static final, 
-because all variables in an interface are automatically public static final. For example,</li>
-</ul>
-<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">Named</span></span>{
-    String NO_NAME = <span class="hljs-string">&quot;...&quot;</span>;
-    ...
-}
-</code></pre>
-<hr>
-<h3 id="static-methods-in-interfaces"><code>Static Methods in Interfaces</code></h3>
-<ul>
-<li>Before Java 8, all methods in an interface had to be abstract. 
-Java 8 allows static methods in interfaces that work exactly like static methods in classes. 
-A static method of an interface does not operate on objects, 
-and its purpose should relate to the interface that contains it.</li>
-</ul>
-<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">Measurable</span>
-</span>{
-   <span class="hljs-function"><span class="hljs-keyword">double</span> <span class="hljs-title">getMeasure</span><span class="hljs-params">()</span></span>;  <span class="hljs-comment">// An abstract method</span>
-
-   <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">double</span> <span class="hljs-title">average</span><span class="hljs-params">(Measurable[] objects)</span> <span class="hljs-comment">// A static method</span>
-   </span>{
-      <span class="hljs-keyword">double</span> sum = <span class="hljs-number">0</span>;
-      <span class="hljs-keyword">for</span> (Measurable obj : objects)
-      {
-         sum = sum + obj.getMeasure();
-      }
-      <span class="hljs-keyword">if</span> (objects.length &gt; <span class="hljs-number">0</span>) { <span class="hljs-keyword">return</span> sum / objects.length; }
-      <span class="hljs-keyword">else</span> { <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>; }
-   } 
-}
-<span class="hljs-comment">/*
-To call this method, provide the name of of the interface and the method name: 
- */</span>
-<span class="hljs-keyword">double</span> meanArea = Measurable.average(countries);
-</code></pre>
-<hr>
-<h3 id="default-metonds"><code>default metonds</code></h3>
-<h3 id="a-default-method-is-a-non-static-method-in-an-interface-that-has-an-implementation">A default method is a non-static method in an interface that has an implementation.</h3>
-<h3 id="a-class-that-implements-the-method-either-inherits-the-default-behavior-or-overrides-it">A class that implements the method either inherits the default behavior or overrides it.</h3>
-<h3 id="by-providing-default-methods-in-an-interface-it-is-less-work-to-define-a-class-that-implements-an-interface">By providing default methods in an interface, it is less work to define a class that implements an interface.</h3>
-<p><em>For example, the Measurable interface can declare getMeasure as a default method:</em></p>
-<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">Measurable</span> </span>{
-    <span class="hljs-function"><span class="hljs-keyword">default</span> <span class="hljs-keyword">double</span> <span class="hljs-title">getMeasure</span><span class="hljs-params">()</span> </span>{ <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>; } 
-}
-</code></pre>
-<hr>
-<h3 id="converting-from-classes-to-interfaces"><code>Converting from Classes to Interfaces</code></h3>
-<ul>
-<li>It is legal to convert from the BankAccount type to the Measurable type. 
-In general, you can convert from a class type to the type of any interface that the class implements. For example,</li>
-</ul>
-<pre><code class="lang-java">
-BankAccount account = <span class="hljs-keyword">new</span> BankAccount(<span class="hljs-number">1000</span>); 
-Measurable meas = account; <span class="hljs-comment">// OK</span>
-</code></pre>
-<h3 id="casting-from-interfaces-to-classes"><code>Casting from Interfaces to Classes</code></h3>
-<ul>
-<li>Consider this method that returns the object with the larger measure:</li>
-</ul>
-<pre><code class="lang-java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> Measurable <span class="hljs-title">larger</span><span class="hljs-params">(Measurable obj1, Measurable obj2)</span> </span>{
-    <span class="hljs-keyword">if</span> (obj1.getMeasure() &gt; obj2.getMeasure()) {
-        <span class="hljs-keyword">return</span> obj1; 
-    }<span class="hljs-keyword">else</span>{
-        <span class="hljs-keyword">return</span> obj2;
-    }
-}
-
-<span class="hljs-comment">/*
- The larger method returns the object with the larger measure, as a Measurable reference. It has no choice&#x2013;&#x2013;it does not know the exact type of the object. Let&#x2019;s use the method:
- */</span>
-Country uruguay = <span class="hljs-keyword">new</span> Country(<span class="hljs-string">&quot;Uruguay&quot;</span>, <span class="hljs-number">176220</span>); 
-Country thailand = <span class="hljs-keyword">new</span> Country(<span class="hljs-string">&quot;Thailand&quot;</span>, <span class="hljs-number">513120</span>); 
-Measurable max = larger(uruguay, thailand); 
-
-<span class="hljs-comment">/* 
-Now what can you do with the max reference? 
-You know it refers to a Country object, but the compiler doesn&#x2019;t. 
-For example, you cannot call the getName method:
- */</span>
-String countryName = max.getName(); <span class="hljs-comment">// Error</span>
-<span class="hljs-comment">/*
-That call is an error, because the Measurable type has no getName method.
-However, as long as you are absolutely sure that max refers to a Country object, 
-you can use the cast notation to convert its type back: 
- */</span>
-Country maxCountry = (Country) max;
-String name = maxCountry.getName();
-</code></pre>
+                                <h1 id="2-create-a-project-with-springboot-initializr">2. Create a Project with SpringBoot initializr</h1>
 
                                 
                                 </section>
@@ -756,12 +625,12 @@ String name = maxCountry.getName();
 
             
                 
-                <a href="Abstract_class.html" class="navigation navigation-prev " aria-label="Previous page: 2. Abstract Class">
+                <a href="sbIntro.html" class="navigation navigation-prev " aria-label="Previous page: 1. What is SpringBoot">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="callback.html" class="navigation navigation-next " aria-label="Next page: 4. callback by Interface">
+                <a href="../end/SUMMARY.html" class="navigation navigation-next " aria-label="Next page: End">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -772,7 +641,7 @@ String name = maxCountry.getName();
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"3. Interface","level":"1.2.3","depth":2,"next":{"title":"4. callback by Interface","level":"1.2.4","depth":2,"path":"ch1/callback.md","ref":"ch1/callback.md","articles":[]},"previous":{"title":"2. Abstract Class","level":"1.2.2","depth":2,"path":"ch1/Abstract_class.md","ref":"ch1/Abstract_class.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["expandable-chapters"],"pluginsConfig":{"expandable-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css"}},"file":{"path":"ch1/interface.md","mtime":"2020-03-26T07:34:45.748Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-04-01T23:47:29.437Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"2. Create a Project with SpringBoot initializr","level":"4.3.2","depth":2,"next":{"title":"End","level":"5.1","depth":1,"path":"end/SUMMARY.md","ref":"end/SUMMARY.md","articles":[]},"previous":{"title":"1. What is SpringBoot","level":"4.3.1","depth":2,"path":"sb/sbIntro.md","ref":"sb/sbIntro.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["expandable-chapters"],"pluginsConfig":{"expandable-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css"}},"file":{"path":"sb/init.md","mtime":"2020-04-01T23:46:46.991Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-04-01T23:47:29.437Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
