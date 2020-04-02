@@ -46,6 +46,10 @@
     * [10. Running SpringBoot from command line](sb/commandLine.md)
     * [11. Injecting Custom App properties](sb/injecting.md)
     * [12. Configuring the Spring Boot Server](sb/configServer.md)
+* [SpringBoot Build REST CRUD API with Hibernate](SBRCAH/into.md)
+    * [1. Project Overview](SBRCAH/init.md)
+    * [2. Create Project with Spring Initializr](SBRCAH/init1.md)
+    * [3. Integrating Hibernate and JPA](SBRCAH/integrateHibeJPA.md)
 
 -----
 * [End](end/SUMMARY.md)
