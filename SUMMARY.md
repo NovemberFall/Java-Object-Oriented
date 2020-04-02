@@ -40,6 +40,7 @@
     * [4. Springboot starters](sb/start.md)
     * [5. Springboot Starter Parent](sb/parent.md)
     * [6. Springboot Dev Tools](sb/tools.md)
+    * [7. actuator](sb/actuator.md)
 
 -----
 * [End](end/SUMMARY.md)
