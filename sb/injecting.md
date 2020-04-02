@@ -17,7 +17,7 @@
 # Define my crazy properties
 #
 coach.name = Mickey mouse
-tem.name = The Mouse Club
+team.name = The Mouse Club
 ```
 
 ![](img/2020-04-02-02-46-14.png)
@@ -62,6 +62,8 @@ public class FunRestController {
     }
 }
 ```
+
+![](img/2020-04-02-02-59-41.png)
 
 
 
