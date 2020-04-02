@@ -44,6 +44,7 @@
     * [8. Accessing Actuator endpoints](sb/actuatorEndpts.md)
     * [9. Applying Security to Actuator endpoints](sb/securityEndpt.md)
     * [10. Running SpringBoot from command line](sb/commandLine.md)
+    * [11. Injecting Custom App properties](sb/injecting.md)
 
 -----
 * [End](end/SUMMARY.md)
