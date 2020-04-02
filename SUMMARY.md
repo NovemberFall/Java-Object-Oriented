@@ -36,6 +36,7 @@
 * [SpringBoot](sb/into.md)
     * [1. What is SpringBoot](sb/sbIntro.md)
     * [2. Create a Project with SpringBoot initializr](sb/init.md)
+    * [3. Exploring the SpringBoot Project Structure - Part1](sb/part1.md)
 
 -----
 * [End](end/SUMMARY.md)
