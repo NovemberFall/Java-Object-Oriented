@@ -41,6 +41,9 @@
     * [5. Springboot Starter Parent](sb/parent.md)
     * [6. Springboot Dev Tools](sb/tools.md)
     * [7. actuator](sb/actuator.md)
+    * [8. Accessing Actuator endpoints](sb/actuatorEndpts.md)
+    * [9. Applying Security to Actuator endpoints](sb/securityEndpt.md)
+    * [10. Running SpringBoot from command line](sb/commandLine.md)
 
 -----
 * [End](end/SUMMARY.md)
