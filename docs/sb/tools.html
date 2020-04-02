@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>End · GitBook</title>
+        <title>6. Springboot Dev Tools · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -53,8 +53,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
+    <link rel="next" href="../end/SUMMARY.html" />
     
-    <link rel="prev" href="../sb/tools.html" />
+    
+    <link rel="prev" href="parent.html" />
     
 
     </head>
@@ -485,9 +487,9 @@
             
         </li>
     
-        <li class="chapter " data-level="4.3" data-path="../sb/into.html">
+        <li class="chapter " data-level="4.3" data-path="into.html">
             
-                <a href="../sb/into.html">
+                <a href="into.html">
             
                     
                     SpringBoot
@@ -499,9 +501,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="4.3.1" data-path="../sb/sbIntro.html">
+        <li class="chapter " data-level="4.3.1" data-path="sbIntro.html">
             
-                <a href="../sb/sbIntro.html">
+                <a href="sbIntro.html">
             
                     
                     1. What is SpringBoot
@@ -512,9 +514,9 @@
             
         </li>
     
-        <li class="chapter " data-level="4.3.2" data-path="../sb/init.html">
+        <li class="chapter " data-level="4.3.2" data-path="init.html">
             
-                <a href="../sb/init.html">
+                <a href="init.html">
             
                     
                     2. Create a Project with SpringBoot initializr
@@ -525,9 +527,9 @@
             
         </li>
     
-        <li class="chapter " data-level="4.3.3" data-path="../sb/part1.html">
+        <li class="chapter " data-level="4.3.3" data-path="part1.html">
             
-                <a href="../sb/part1.html">
+                <a href="part1.html">
             
                     
                     3. Exploring the SpringBoot Project Structure
@@ -538,9 +540,9 @@
             
         </li>
     
-        <li class="chapter " data-level="4.3.4" data-path="../sb/start.html">
+        <li class="chapter " data-level="4.3.4" data-path="start.html">
             
-                <a href="../sb/start.html">
+                <a href="start.html">
             
                     
                     4. Springboot starters
@@ -551,9 +553,9 @@
             
         </li>
     
-        <li class="chapter " data-level="4.3.5" data-path="../sb/parent.html">
+        <li class="chapter " data-level="4.3.5" data-path="parent.html">
             
-                <a href="../sb/parent.html">
+                <a href="parent.html">
             
                     
                     5. Springboot Starter Parent
@@ -564,9 +566,9 @@
             
         </li>
     
-        <li class="chapter " data-level="4.3.6" data-path="../sb/tools.html">
+        <li class="chapter active" data-level="4.3.6" data-path="tools.html">
             
-                <a href="../sb/tools.html">
+                <a href="tools.html">
             
                     
                     6. Springboot Dev Tools
@@ -589,9 +591,9 @@
         
         
     
-        <li class="chapter active" data-level="5.1" data-path="SUMMARY.html">
+        <li class="chapter " data-level="5.1" data-path="../end/SUMMARY.html">
             
-                <a href="SUMMARY.html">
+                <a href="../end/SUMMARY.html">
             
                     
                     End
@@ -632,7 +634,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >End</a>
+        <a href=".." >6. Springboot Dev Tools</a>
     </h1>
 </div>
 
@@ -647,7 +649,78 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="end">End</h1>
+                                <h1 id="6-springboot-dev-tools">6. Springboot Dev Tools</h1>
+<p><img src="img/2020-04-01-21-43-17.png" alt=""></p>
+<p><img src="img/2020-04-01-21-43-39.png" alt=""></p>
+<p><img src="img/2020-04-01-21-43-55.png" alt=""></p>
+<h2 id=""><img src="img/2020-04-01-21-44-16.png" alt=""></h2>
+<ul>
+<li><p>let&apos;s clean up - File &gt; Close ALL</p>
+</li>
+<li><p>rename our project</p>
+</li>
+</ul>
+<p><img src="img/2020-04-01-21-59-01.png" alt=""></p>
+<ul>
+<li>copy older project, change name, and import new project</li>
+</ul>
+<p><img src="img/2020-04-01-22-09-31.png" alt=""></p>
+<hr>
+<h2 id="under-02-dev-tools-demopomxml">under 02-dev-tools-demo/pom.xml</h2>
+<pre><code class="lang-xml">        <span class="hljs-comment">&lt;!-- ADD SUPPORT FOR AUTOMATIC RELOADING --&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>org.springframework.boot<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>spring-boot-devtools<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">version</span>&gt;</span>2.1.1.RELEASE<span class="hljs-tag">&lt;/<span class="hljs-name">version</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">dependencies</span>&gt;</span>
+</code></pre>
+<ul>
+<li>note: intellij automatically add <code>2.1.1.RELEASE</code></li>
+</ul>
+<hr>
+<h2 id="note-for-intellij-we-need-more-working">Note: for intellij, we need more working:</h2>
+<ul>
+<li><p>on intellij, Ctrl + Shift + A</p>
+</li>
+<li><p>Search for <code>Registry</code></p>
+</li>
+</ul>
+<p><img src="img/2020-04-01-23-23-11.png" alt=""></p>
+<p><img src="img/2020-04-01-23-29-13.png" alt=""></p>
+<p><img src="img/2020-04-01-23-29-32.png" alt=""></p>
+<ul>
+<li>update FunRestController</li>
+</ul>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> com.luv2code.springboot.demo.mycoolapp.rest;
+<span class="hljs-keyword">import</span> org.springframework.web.bind.annotation.GetMapping;
+<span class="hljs-keyword">import</span> org.springframework.web.bind.annotation.RestController;
+
+<span class="hljs-keyword">import</span> java.time.LocalDateTime;
+
+<span class="hljs-meta">@RestController</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FunRestController</span> </span>{
+
+    <span class="hljs-comment">// expose &quot;/&quot; that return &quot;Hello World&quot;</span>
+    <span class="hljs-meta">@GetMapping</span>(<span class="hljs-string">&quot;/&quot;</span>)
+    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">sayHello</span><span class="hljs-params">()</span></span>{
+        <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;Hello World! Time on server is &quot;</span> + LocalDateTime.now(); <span class="hljs-comment">//Current time stamp</span>
+    }
+
+    <span class="hljs-comment">//expose a new endpoint for &quot;workout&quot;</span>
+    <span class="hljs-meta">@GetMapping</span>(<span class="hljs-string">&quot;/workout&quot;</span>)
+    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getDailyWorkout</span><span class="hljs-params">()</span></span>{
+        <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;Run a hard 5k...!&quot;</span>;
+    }
+
+    <span class="hljs-comment">//expose a new endpoint for &quot;fortune&quot;</span>
+    <span class="hljs-meta">@GetMapping</span>(<span class="hljs-string">&quot;/fortune&quot;</span>)
+    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getDailyFortune</span><span class="hljs-params">()</span></span>{
+        <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;Today is Sunny day!&quot;</span>;
+    }
+}
+</code></pre>
+<p><img src="img/2020-04-01-23-58-42.png" alt=""></p>
 
                                 
                                 </section>
@@ -675,10 +748,14 @@
 
             
                 
-                <a href="../sb/tools.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 6. Springboot Dev Tools">
+                <a href="parent.html" class="navigation navigation-prev " aria-label="Previous page: 5. Springboot Starter Parent">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
+                
+                <a href="../end/SUMMARY.html" class="navigation navigation-next " aria-label="Next page: End">
+                    <i class="fa fa-angle-right"></i>
+                </a>
                 
             
         
@@ -687,7 +764,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"End","level":"5.1","depth":1,"previous":{"title":"6. Springboot Dev Tools","level":"4.3.6","depth":2,"path":"sb/tools.md","ref":"sb/tools.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["expandable-chapters"],"pluginsConfig":{"expandable-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css"}},"file":{"path":"end/SUMMARY.md","mtime":"2020-03-26T06:37:21.680Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-04-02T06:58:56.608Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"6. Springboot Dev Tools","level":"4.3.6","depth":2,"next":{"title":"End","level":"5.1","depth":1,"path":"end/SUMMARY.md","ref":"end/SUMMARY.md","articles":[]},"previous":{"title":"5. Springboot Starter Parent","level":"4.3.5","depth":2,"path":"sb/parent.md","ref":"sb/parent.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["expandable-chapters"],"pluginsConfig":{"expandable-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css"}},"file":{"path":"sb/tools.md","mtime":"2020-04-02T06:58:44.236Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-04-02T06:58:56.608Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
