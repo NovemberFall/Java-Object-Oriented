@@ -598,6 +598,95 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="2-create-a-project-with-springboot-initializr">2. Create a Project with SpringBoot initializr</h1>
+<p><img src="img/2020-04-01-16-50-08.png" alt="">
+<img src="img/2020-04-01-16-50-43.png" alt=""></p>
+<h2 id="input-httpsstartspringio">input <code>https://start.spring.io/</code></h2>
+<p><img src="img/2020-04-01-16-55-27.png" alt=""></p>
+<ul>
+<li><p>note: add <code>Spring Web</code></p>
+</li>
+<li><p>click <code>GENERATE</code> button to create a web project</p>
+</li>
+<li><p>then we can download the <code>mycoolapp.zip</code></p>
+</li>
+<li><p>unzip this .zip file</p>
+</li>
+</ul>
+<p><img src="img/2020-04-01-17-00-01.png" alt=""></p>
+<hr>
+<h2 id="create-a-folder-named-dev-spring-boot-paste-mycoolapp-into-this-folder">create a folder named <code>dev-spring-boot</code>, paste mycoolapp into this folder</h2>
+<ul>
+<li>import mave project</li>
+</ul>
+<p><img src="img/2020-04-01-19-25-06.png" alt=""></p>
+<p><img src="img/2020-04-01-19-25-29.png" alt=""></p>
+<ul>
+<li>click next</li>
+</ul>
+<p><img src="img/2020-04-01-19-25-55.png" alt=""></p>
+<p><img src="img/2020-04-01-19-26-56.png" alt=""></p>
+<h2 id="if-we-use-eclipse-we-need-to-fix-it-but-for-intellij-dont-need">if we use Eclipse, we need to fix it, but for intellij don&apos;t need</h2>
+<ul>
+<li><p>it&apos;s different from jsp + servlet</p>
+</li>
+<li><p>springboot just need to run application</p>
+</li>
+</ul>
+<p><img src="img/2020-04-01-20-07-57.png" alt=""></p>
+<ul>
+<li>open <code>localhost:8080</code></li>
+</ul>
+<p><img src="img/2020-04-01-20-09-45.png" alt=""></p>
+<ul>
+<li>here is ugly error</li>
+</ul>
+<hr>
+<h2 id="developing-a-rest-api-controller-with-spring-boot">Developing a REST API Controller with Spring Boot</h2>
+<ul>
+<li>create a new package </li>
+</ul>
+<p><img src="img/2020-04-01-20-15-29.png" alt=""></p>
+<ul>
+<li><p>create a new class <code>FunRestController</code> inside this folder</p>
+</li>
+<li><p>building REST controller we start with the annotation</p>
+</li>
+<li><p>improve the FunRestController.java</p>
+</li>
+</ul>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> com.luv2code.springboot.demo.mycoolapp.rest;
+
+<span class="hljs-keyword">import</span> org.springframework.web.bind.annotation.GetMapping;
+<span class="hljs-keyword">import</span> org.springframework.web.bind.annotation.RestController;
+
+<span class="hljs-keyword">import</span> java.time.LocalDateTime;
+
+<span class="hljs-meta">@RestController</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FunRestController</span> </span>{
+
+    <span class="hljs-comment">// expose &quot;/&quot; that return &quot;Hello World&quot;</span>
+
+    <span class="hljs-meta">@GetMapping</span>(<span class="hljs-string">&quot;/&quot;</span>)
+    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">sayHello</span><span class="hljs-params">()</span></span>{
+        <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;Hello World! Time on server is &quot;</span> + LocalDateTime.now(); <span class="hljs-comment">//Current time stamp</span>
+    }
+}
+</code></pre>
+<ul>
+<li><p>back to <code>MycoolappApplication</code></p>
+</li>
+<li><p>run again</p>
+</li>
+</ul>
+<p><img src="img/2020-04-01-20-38-02.png" alt=""></p>
+<ul>
+<li><p>springboot solution made it easier to get started with spring development</p>
+</li>
+<li><p>so use that spring initializer to help us set up our project really quickly</p>
+</li>
+<li><p>we don&apos;t need to do any xml configuration and any java configuration</p>
+</li>
+</ul>
 
                                 
                                 </section>
@@ -641,7 +730,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"2. Create a Project with SpringBoot initializr","level":"4.3.2","depth":2,"next":{"title":"End","level":"5.1","depth":1,"path":"end/SUMMARY.md","ref":"end/SUMMARY.md","articles":[]},"previous":{"title":"1. What is SpringBoot","level":"4.3.1","depth":2,"path":"sb/sbIntro.md","ref":"sb/sbIntro.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["expandable-chapters"],"pluginsConfig":{"expandable-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css"}},"file":{"path":"sb/init.md","mtime":"2020-04-01T23:46:46.991Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-04-01T23:47:29.437Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"2. Create a Project with SpringBoot initializr","level":"4.3.2","depth":2,"next":{"title":"End","level":"5.1","depth":1,"path":"end/SUMMARY.md","ref":"end/SUMMARY.md","articles":[]},"previous":{"title":"1. What is SpringBoot","level":"4.3.1","depth":2,"path":"sb/sbIntro.md","ref":"sb/sbIntro.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["expandable-chapters"],"pluginsConfig":{"expandable-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css"}},"file":{"path":"sb/init.md","mtime":"2020-04-02T03:51:50.739Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-04-02T03:52:37.467Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
