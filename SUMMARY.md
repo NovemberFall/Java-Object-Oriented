@@ -59,6 +59,8 @@
     * [10. REST Controller Update and Delete](SBRCAH/restContoller2.md)
 * [SpringBoot REST JPA](JPA/into.md)
     * [1. REST JPA Overview](JPA/overview.md)
+    * [2. Create JPA DAO](JPA/jpaDao.md)
+    * [3. Testing REST API DAO](JPA/testJPAapi.md)
 
 -----
 * [End](end/SUMMARY.md)
