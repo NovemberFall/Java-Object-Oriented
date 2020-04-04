@@ -13,7 +13,7 @@
     * [2. IO Stream 2](ch2/IOstream-2.md)
     * [3. Output Stream](ch2/outputStream.md)
     * [4. byte Stream](ch2/byteStream.md)
-* [Chapter3：Array|ArrayList|LinkedList](ch3/intro.md)
+* [Chapter3：Array | ArrayList | LinkedList](ch3/intro.md)
     * [1. Array](ch3/arr.md)
     * [2. ArrayList](ch3/arrList.md)
     * [3. LinkedList](ch3/LinkedList.md)
