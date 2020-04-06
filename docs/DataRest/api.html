@@ -53,7 +53,7 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../Thymeleaf/into.html" />
+    <link rel="next" href="config.html" />
     
     
     <link rel="prev" href="overview.html" />
@@ -919,7 +919,7 @@
                 <a href="../DataRest/into.html">
             
                     
-                    Spring DATA REST
+                    Spring DATA RESTful API
             
                 </a>
             
@@ -947,6 +947,19 @@
             
                     
                     2. Create a REST API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7.3" data-path="config.html">
+            
+                <a href="config.html">
+            
+                    
+                    3. Configuration Pagination Sort
             
                 </a>
             
@@ -1057,6 +1070,101 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="2-create-a-rest-api">2. Create a REST API</h1>
+<ul>
+<li>insert new data to my database</li>
+</ul>
+<pre><code class="lang-sql"><span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">DATABASE</span>  <span class="hljs-keyword">IF</span> <span class="hljs-keyword">NOT</span> <span class="hljs-keyword">EXISTS</span> <span class="hljs-string">`employee_directory`</span>;
+<span class="hljs-keyword">USE</span> <span class="hljs-string">`employee_directory`</span>;
+<span class="hljs-comment">--</span>
+<span class="hljs-comment">-- Table structure for table `employee`</span>
+<span class="hljs-comment">--</span>
+<span class="hljs-keyword">DROP</span> <span class="hljs-keyword">TABLE</span> <span class="hljs-keyword">IF</span> <span class="hljs-keyword">EXISTS</span> <span class="hljs-string">`employee`</span>;
+
+<span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">TABLE</span> <span class="hljs-string">`employee`</span> (
+  <span class="hljs-string">`id`</span> <span class="hljs-built_in">int</span>(<span class="hljs-number">11</span>) <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span> AUTO_INCREMENT,
+  <span class="hljs-string">`first_name`</span> <span class="hljs-built_in">varchar</span>(<span class="hljs-number">45</span>) <span class="hljs-keyword">DEFAULT</span> <span class="hljs-literal">NULL</span>,
+  <span class="hljs-string">`last_name`</span> <span class="hljs-built_in">varchar</span>(<span class="hljs-number">45</span>) <span class="hljs-keyword">DEFAULT</span> <span class="hljs-literal">NULL</span>,
+  <span class="hljs-string">`email`</span> <span class="hljs-built_in">varchar</span>(<span class="hljs-number">45</span>) <span class="hljs-keyword">DEFAULT</span> <span class="hljs-literal">NULL</span>,
+  PRIMARY <span class="hljs-keyword">KEY</span> (<span class="hljs-string">`id`</span>)
+) <span class="hljs-keyword">ENGINE</span>=<span class="hljs-keyword">InnoDB</span> AUTO_INCREMENT=<span class="hljs-number">1</span> <span class="hljs-keyword">DEFAULT</span> <span class="hljs-keyword">CHARSET</span>=latin1;
+<span class="hljs-comment">--</span>
+<span class="hljs-comment">-- Data for table `employee`</span>
+<span class="hljs-comment">--</span>
+<span class="hljs-keyword">INSERT</span> <span class="hljs-keyword">INTO</span> <span class="hljs-string">`employee`</span> <span class="hljs-keyword">VALUES</span> 
+    (<span class="hljs-number">1</span>,<span class="hljs-string">&apos;Leslie&apos;</span>,<span class="hljs-string">&apos;Andrews&apos;</span>,<span class="hljs-string">&apos;leslie@gmail.com&apos;</span>),
+    (<span class="hljs-number">2</span>,<span class="hljs-string">&apos;Emma&apos;</span>,<span class="hljs-string">&apos;Baumgarten&apos;</span>,<span class="hljs-string">&apos;emma@gmail.com&apos;</span>),
+    (<span class="hljs-number">3</span>,<span class="hljs-string">&apos;Avani&apos;</span>,<span class="hljs-string">&apos;Gupta&apos;</span>,<span class="hljs-string">&apos;avani@gmail.com&apos;</span>),
+    (<span class="hljs-number">4</span>,<span class="hljs-string">&apos;Yuri&apos;</span>,<span class="hljs-string">&apos;Petrov&apos;</span>,<span class="hljs-string">&apos;yuri@gmail.com&apos;</span>),
+    (<span class="hljs-number">5</span>,<span class="hljs-string">&apos;Juan&apos;</span>,<span class="hljs-string">&apos;Vega&apos;</span>,<span class="hljs-string">&apos;juan@gmail.com&apos;</span>);
+</code></pre>
+<ul>
+<li><p>renew employee my database</p>
+</li>
+<li><p>copy 23 project, paste and named project 24</p>
+</li>
+</ul>
+<p><img src="img/2020-04-05-23-20-46.png" alt=""></p>
+<p><img src="img/2020-04-05-23-22-09.png" alt=""></p>
+<p><img src="img/2020-04-05-23-22-42.png" alt=""></p>
+<p><img src="img/2020-04-05-23-22-59.png" alt=""></p>
+<p><img src="img/2020-04-05-23-23-52.png" alt=""></p>
+<p><img src="img/2020-04-05-23-24-27.png" alt=""></p>
+<ul>
+<li>now run our app, but Note: refresh my pom.xml first</li>
+</ul>
+<p><img src="img/2020-04-05-23-37-47.png" alt=""></p>
+<ul>
+<li>so we can click <code>http://localhost:8080/employees/1</code></li>
+</ul>
+<p><img src="img/2020-04-05-23-39-41.png" alt=""></p>
+<ul>
+<li>test postman</li>
+</ul>
+<p><img src="img/2020-04-05-23-40-47.png" alt=""></p>
+<p><img src="img/2020-04-05-23-41-38.png" alt=""></p>
+<ul>
+<li>deploy my <code>application.properites</code></li>
+</ul>
+<pre><code class="lang-json">#
+# JDBC properties
+#
+spring.datasource.url=jdbc:mysql://localhost:3306/employee_directory?useSSL=false&amp;serverTimezone=UTC
+spring.datasource.username=root
+spring.datasource.password=
+
+#
+# Spring Data REST properties
+#
+spring.data.rest.base-path=/magic-api
+</code></pre>
+<ul>
+<li>rerun app</li>
+</ul>
+<p><img src="img/2020-04-05-23-44-29.png" alt=""></p>
+<ul>
+<li><p>404 error</p>
+</li>
+<li><p>since we set path to be <code>spring.data.rest.base-path=/magic-api</code></p>
+</li>
+</ul>
+<p><img src="img/2020-04-05-23-45-44.png" alt=""></p>
+<ul>
+<li>add new</li>
+</ul>
+<p><img src="img/2020-04-05-23-46-59.png" alt=""></p>
+<p><img src="img/2020-04-05-23-47-46.png" alt=""></p>
+<ul>
+<li>update</li>
+</ul>
+<p><img src="img/2020-04-05-23-50-15.png" alt=""></p>
+<ul>
+<li>delete</li>
+</ul>
+<p><img src="img/2020-04-05-23-51-13.png" alt=""></p>
+<ul>
+<li>but we can see status: 204 , that meas success</li>
+</ul>
+<p><img src="img/2020-04-05-23-51-51.png" alt=""></p>
 
                                 
                                 </section>
@@ -1089,7 +1197,7 @@
                 </a>
                 
                 
-                <a href="../Thymeleaf/into.html" class="navigation navigation-next " aria-label="Next page: Spring Boot Thymeleaf">
+                <a href="config.html" class="navigation navigation-next " aria-label="Next page: 3. Configuration Pagination Sort">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -1100,7 +1208,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"2. Create a REST API","level":"4.7.2","depth":2,"next":{"title":"Spring Boot Thymeleaf","level":"4.8","depth":1,"path":"Thymeleaf/into.md","ref":"Thymeleaf/into.md","articles":[{"title":"1. Thymeleaf Overview","level":"4.8.1","depth":2,"path":"Thymeleaf/overview.md","ref":"Thymeleaf/overview.md","articles":[]}]},"previous":{"title":"1. Spring DATA REST Overview","level":"4.7.1","depth":2,"path":"DataREST/overview.md","ref":"DataREST/overview.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["expandable-chapters"],"pluginsConfig":{"expandable-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css"}},"file":{"path":"DataREST/api.md","mtime":"2020-04-06T04:51:41.337Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-04-06T06:09:58.348Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"2. Create a REST API","level":"4.7.2","depth":2,"next":{"title":"3. Configuration Pagination Sort","level":"4.7.3","depth":2,"path":"DataREST/config.md","ref":"DataREST/config.md","articles":[]},"previous":{"title":"1. Spring DATA REST Overview","level":"4.7.1","depth":2,"path":"DataREST/overview.md","ref":"DataREST/overview.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["expandable-chapters"],"pluginsConfig":{"expandable-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css"}},"file":{"path":"DataREST/api.md","mtime":"2020-04-06T06:52:36.667Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-04-06T07:16:32.917Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
