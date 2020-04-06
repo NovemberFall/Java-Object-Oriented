@@ -64,6 +64,10 @@
 * [SpringBoot DATA JPA](DataJpa/into.md)
     * [1. Spring DATA JPA Overview](DataJpa/overview.md)
     * [2. Creating Spring DATA JPA Repo](DataJpa/jpaRepo.md)
+* [Spring DATA RESTful API](DataRest/into.md)
+    * [1. Spring DATA REST Overview](DataRest/overview.md)
+    * [2. Create a REST API](DataRest/api.md)
+    * [3. Configuration Pagination Sort](DataRest/config.md)
 * [Spring Boot Thymeleaf](Thymeleaf/into.md)
     * [1. Thymeleaf Overview](Thymeleaf/overview.md)
 
