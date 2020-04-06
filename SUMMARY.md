@@ -61,6 +61,9 @@
     * [1. REST JPA Overview](JPA/overview.md)
     * [2. Create JPA DAO](JPA/jpaDao.md)
     * [3. Testing REST API DAO](JPA/testJPAapi.md)
+* [SpringBoot DATA JPA](DataJpa/into.md)
+    * [1. Spring DATA JPA Overview](DataJpa/overview.md)
+    * [2. Creating Spring DATA JPA Repo](DataJpa/jpaRepo.md)
 
 -----
 * [End](end/SUMMARY.md)
