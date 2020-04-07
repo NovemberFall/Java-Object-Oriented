@@ -70,6 +70,8 @@
     * [3. Configuration Pagination Sort](DataRest/config.md)
 * [Spring Boot Thymeleaf](Thymeleaf/into.md)
     * [1. Thymeleaf Overview](Thymeleaf/overview.md)
+    * [2. Create Thymeleaf App](Thymeleaf/thymeleafApp.md)
+    * [3. Apply CSS style](Thymeleaf/css.md)
 
 -----
 * [End](end/SUMMARY.md)
