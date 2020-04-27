@@ -72,6 +72,10 @@
     * [1. Thymeleaf Overview](Thymeleaf/overview.md)
     * [2. Create Thymeleaf App](Thymeleaf/thymeleafApp.md)
     * [3. Apply CSS style](Thymeleaf/css.md)
+    * [4. create html table](Thymeleaf/htmlTable.md)
+    * [5. Thymeleaf-add Bootstrap CSS](Thymeleaf/bootstrapCSS.md)
+* [Spring Boot Thymeleaf CRUD DB](ThymeleafCRUD/into.md)
+    * [1. Thymeleaf CRUD DB Get Employees](ThymeleafCRUD/getEmployees.md)
 
 -----
 * [End](end/SUMMARY.md)
