@@ -76,6 +76,7 @@
     * [5. Thymeleaf-add Bootstrap CSS](Thymeleaf/bootstrapCSS.md)
 * [Spring Boot Thymeleaf CRUD DB](ThymeleafCRUD/into.md)
     * [1. Thymeleaf CRUD DB Get Employees](ThymeleafCRUD/getEmployees.md)
+    * [2. Thymeleaf CRUD DB Add Employees](ThymeleafCRUD/addEmployees.md)
 
 -----
 * [End](end/SUMMARY.md)

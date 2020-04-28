@@ -53,7 +53,7 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../end/SUMMARY.html" />
+    <link rel="next" href="addEmployees.html" />
     
     
     <link rel="prev" href="into.html" />
@@ -1083,6 +1083,19 @@
             
         </li>
     
+        <li class="chapter " data-level="4.9.2" data-path="addEmployees.html">
+            
+                <a href="addEmployees.html">
+            
+                    
+                    2. Thymeleaf CRUD DB Add Employees
+            
+                </a>
+            
+
+            
+        </li>
+    
 
             </ul>
             
@@ -1154,6 +1167,230 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="1-thymeleaf-crud-db-get-employees">1. Thymeleaf CRUD DB Get Employees</h1>
+<p><img src="img/2020-04-27-16-51-44.png" alt=""></p>
+<p><img src="img/2020-04-27-16-51-58.png" alt=""></p>
+<p><img src="img/2020-04-27-16-52-15.png" alt=""></p>
+<p><img src="img/2020-04-27-16-52-35.png" alt=""></p>
+<p><img src="img/2020-04-27-16-52-50.png" alt=""></p>
+<p><img src="img/2020-04-27-16-53-09.png" alt=""></p>
+<hr>
+<h3 id="copy-33-project-paste-to-34-project-34-thymeleafdemo-employees-list-db">copy 33-project, paste to 34-project <code>34-thymeleafdemo-employees-list-db</code></h3>
+<ul>
+<li><p>intellij reopen 34-project</p>
+</li>
+<li><p>Update pom.xml for database support</p>
+</li>
+<li><p>add a dependecny in <code>pom.xml</code></p>
+</li>
+</ul>
+<p><img src="img/2020-04-27-16-57-47.png" alt=""></p>
+<pre><code class="lang-html">    <span class="hljs-tag">&lt;<span class="hljs-name">dependencies</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>org.springframework.boot<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>spring-boot-starter-data-jpa<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span>
+</code></pre>
+<ul>
+<li>add entry for mysql</li>
+</ul>
+<p><img src="img/2020-04-27-16-59-37.png" alt=""></p>
+<pre><code class="lang-html">    <span class="hljs-tag">&lt;<span class="hljs-name">dependencies</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>org.springframework.boot<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>spring-boot-starter-data-jpa<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>mysql<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>mysql-connector-java<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span>
+</code></pre>
+<ul>
+<li>update project</li>
+</ul>
+<p><img src="img/2020-04-27-17-01-21.png" alt=""></p>
+<ul>
+<li>now copy from our previous project <code>23-project</code>&apos;s codes</li>
+</ul>
+<p><img src="img/2020-04-27-17-03-37.png" alt=""></p>
+<p><img src="img/2020-04-27-17-04-53.png" alt=""></p>
+<ul>
+<li>delete old Employee(delete the &quot;model&quot; package)</li>
+</ul>
+<p><img src="img/2020-04-27-17-05-36.png" alt=""></p>
+<p><img src="img/2020-04-27-17-07-05.png" alt=""></p>
+<ul>
+<li>create a new package for 34-project</li>
+</ul>
+<p><img src="img/2020-04-27-17-08-27.png" alt=""></p>
+<ul>
+<li>COPY <code>Employee.java</code> from 23-project, paste into 34-project</li>
+</ul>
+<p><img src="img/2020-04-27-17-10-10.png" alt=""></p>
+<ul>
+<li>but we need to add a new constructor <code>id</code> param for new <code>Employee.java</code></li>
+</ul>
+<pre><code class="lang-java">    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Employee</span><span class="hljs-params">(<span class="hljs-keyword">int</span> id, String firstName, String lastName, String email)</span> </span>{
+        <span class="hljs-keyword">this</span>.id = id;
+        <span class="hljs-keyword">this</span>.firstName = firstName;
+        <span class="hljs-keyword">this</span>.lastName = lastName;
+        <span class="hljs-keyword">this</span>.email = email;
+    }
+</code></pre>
+<hr>
+<h2 id="get-employee-part-2">Get Employee Part 2:</h2>
+<p><img src="img/2020-04-27-17-18-51.png" alt=""></p>
+<p><img src="img/2020-04-27-17-20-17.png" alt=""></p>
+<ul>
+<li>copy <code>dao</code> from <code>23-project</code></li>
+</ul>
+<p><img src="img/2020-04-27-17-20-51.png" alt=""></p>
+<p><img src="img/2020-04-27-17-22-04.png" alt=""></p>
+<p><img src="img/2020-04-27-17-22-29.png" alt=""></p>
+<p><img src="img/2020-04-27-17-23-28.png" alt=""></p>
+<p><img src="img/2020-04-27-17-22-59.png" alt=""></p>
+<ul>
+<li><p>copy <code>service</code> from <code>23-project</code> paste into <code>33-project</code></p>
+</li>
+<li><p>don&apos;t forget to fix error, since <code>23-project</code> import from <code>23</code>, we need to change to import from <code>34-project</code></p>
+</li>
+<li><p>now testing it, run <code>ThymeleafdemoApplication</code> agian</p>
+</li>
+</ul>
+<p><img src="img/2020-04-27-17-32-20.png" alt=""></p>
+<ul>
+<li>STILL WORKING</li>
+</ul>
+<hr>
+<h2 id="now-refresh-my-database">now refresh my database</h2>
+<pre><code class="lang-sql"><span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">DATABASE</span>  <span class="hljs-keyword">IF</span> <span class="hljs-keyword">NOT</span> <span class="hljs-keyword">EXISTS</span> <span class="hljs-string">`employee_directory`</span>;
+<span class="hljs-keyword">USE</span> <span class="hljs-string">`employee_directory`</span>;
+
+<span class="hljs-comment">--</span>
+<span class="hljs-comment">-- Table structure for table `employee`</span>
+<span class="hljs-comment">--</span>
+
+<span class="hljs-keyword">DROP</span> <span class="hljs-keyword">TABLE</span> <span class="hljs-keyword">IF</span> <span class="hljs-keyword">EXISTS</span> <span class="hljs-string">`employee`</span>;
+
+<span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">TABLE</span> <span class="hljs-string">`employee`</span> (
+  <span class="hljs-string">`id`</span> <span class="hljs-built_in">int</span>(<span class="hljs-number">11</span>) <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span> AUTO_INCREMENT,
+  <span class="hljs-string">`first_name`</span> <span class="hljs-built_in">varchar</span>(<span class="hljs-number">45</span>) <span class="hljs-keyword">DEFAULT</span> <span class="hljs-literal">NULL</span>,
+  <span class="hljs-string">`last_name`</span> <span class="hljs-built_in">varchar</span>(<span class="hljs-number">45</span>) <span class="hljs-keyword">DEFAULT</span> <span class="hljs-literal">NULL</span>,
+  <span class="hljs-string">`email`</span> <span class="hljs-built_in">varchar</span>(<span class="hljs-number">45</span>) <span class="hljs-keyword">DEFAULT</span> <span class="hljs-literal">NULL</span>,
+  PRIMARY <span class="hljs-keyword">KEY</span> (<span class="hljs-string">`id`</span>)
+) <span class="hljs-keyword">ENGINE</span>=<span class="hljs-keyword">InnoDB</span> AUTO_INCREMENT=<span class="hljs-number">1</span> <span class="hljs-keyword">DEFAULT</span> <span class="hljs-keyword">CHARSET</span>=latin1;
+
+<span class="hljs-comment">--</span>
+<span class="hljs-comment">-- Data for table `employee`</span>
+<span class="hljs-comment">--</span>
+
+<span class="hljs-keyword">INSERT</span> <span class="hljs-keyword">INTO</span> <span class="hljs-string">`employee`</span> <span class="hljs-keyword">VALUES</span> 
+    (<span class="hljs-number">1</span>,<span class="hljs-string">&apos;Leslie&apos;</span>,<span class="hljs-string">&apos;Andrews&apos;</span>,<span class="hljs-string">&apos;leslie@gmail.com&apos;</span>),
+    (<span class="hljs-number">2</span>,<span class="hljs-string">&apos;Emma&apos;</span>,<span class="hljs-string">&apos;Baumgarten&apos;</span>,<span class="hljs-string">&apos;emma@gmail.com&apos;</span>),
+    (<span class="hljs-number">3</span>,<span class="hljs-string">&apos;Avani&apos;</span>,<span class="hljs-string">&apos;Gupta&apos;</span>,<span class="hljs-string">&apos;avani@gmail.com&apos;</span>),
+    (<span class="hljs-number">4</span>,<span class="hljs-string">&apos;Yuri&apos;</span>,<span class="hljs-string">&apos;Petrov&apos;</span>,<span class="hljs-string">&apos;yuri@gmail.com&apos;</span>),
+    (<span class="hljs-number">5</span>,<span class="hljs-string">&apos;Juan&apos;</span>,<span class="hljs-string">&apos;Vega&apos;</span>,<span class="hljs-string">&apos;juan@gmail.com&apos;</span>);
+</code></pre>
+<p><img src="img/2020-04-27-17-35-16.png" alt=""></p>
+<ul>
+<li><p>Let&apos;s remove the in-memory employee code</p>
+</li>
+<li><p>update EmployeeController </p>
+</li>
+</ul>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> com.luv2code.springboot.thymeleafdemo.controller;
+
+
+<span class="hljs-keyword">import</span> com.luv2code.springboot.thymeleafdemo.entity.Employee;
+<span class="hljs-keyword">import</span> org.springframework.stereotype.Controller;
+<span class="hljs-keyword">import</span> org.springframework.ui.Model;
+<span class="hljs-keyword">import</span> org.springframework.web.bind.annotation.GetMapping;
+<span class="hljs-keyword">import</span> org.springframework.web.bind.annotation.RequestMapping;
+
+<span class="hljs-keyword">import</span> javax.annotation.PostConstruct;
+<span class="hljs-keyword">import</span> java.util.ArrayList;
+<span class="hljs-keyword">import</span> java.util.List;
+
+<span class="hljs-meta">@Controller</span>
+<span class="hljs-meta">@RequestMapping</span>(<span class="hljs-string">&quot;/employees&quot;</span>)
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">EmployeeController</span> </span>{
+
+
+    <span class="hljs-comment">//add mapping for &quot;/list&quot;</span>
+    <span class="hljs-meta">@GetMapping</span>(<span class="hljs-string">&quot;/list&quot;</span>)
+    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">listEmployees</span><span class="hljs-params">(Model theModel)</span> </span>{
+        <span class="hljs-comment">//add to the spring model</span>
+        theModel.addAttribute(<span class="hljs-string">&quot;employees&quot;</span>, theEmployees);
+
+        <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;list-employees&quot;</span>;
+    }
+}
+</code></pre>
+<p><img src="img/2020-04-27-18-26-56.png" alt="">
+<img src="img/2020-04-27-18-28-48.png" alt=""></p>
+<ul>
+<li>update <code>EmployeeController</code></li>
+</ul>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> com.luv2code.springboot.thymeleafdemo.controller;
+
+
+<span class="hljs-keyword">import</span> com.luv2code.springboot.thymeleafdemo.entity.Employee;
+<span class="hljs-keyword">import</span> com.luv2code.springboot.thymeleafdemo.service.EmployeeService;
+<span class="hljs-keyword">import</span> org.springframework.stereotype.Controller;
+<span class="hljs-keyword">import</span> org.springframework.ui.Model;
+<span class="hljs-keyword">import</span> org.springframework.web.bind.annotation.GetMapping;
+<span class="hljs-keyword">import</span> org.springframework.web.bind.annotation.RequestMapping;
+
+<span class="hljs-keyword">import</span> java.util.List;
+
+<span class="hljs-meta">@Controller</span>
+<span class="hljs-meta">@RequestMapping</span>(<span class="hljs-string">&quot;/employees&quot;</span>)
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">EmployeeController</span> </span>{
+
+    <span class="hljs-keyword">private</span> EmployeeService employeeService;
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">EmployeeController</span><span class="hljs-params">(EmployeeService theEmployeeService)</span></span>{
+        employeeService = theEmployeeService;
+    }
+
+    <span class="hljs-comment">//add mapping for &quot;/list&quot;</span>
+    <span class="hljs-meta">@GetMapping</span>(<span class="hljs-string">&quot;/list&quot;</span>)
+    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">listEmployees</span><span class="hljs-params">(Model theModel)</span> </span>{
+        <span class="hljs-comment">//get employees from db</span>
+        List&lt;Employee&gt; theEmployees = employeeService.findAll();
+
+        <span class="hljs-comment">//add to the spring model</span>
+        theModel.addAttribute(<span class="hljs-string">&quot;employees&quot;</span>, theEmployees);
+
+        <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;list-employees&quot;</span>;
+    }
+}
+</code></pre>
+<ul>
+<li>rerun the app</li>
+</ul>
+<p><img src="img/2020-04-27-18-30-49.png" alt=""></p>
+<ul>
+<li>now read data from database</li>
+</ul>
+<hr>
+<ul>
+<li>Add index.html to redirect to <code>employees/list</code></li>
+</ul>
+<p><img src="img/2020-04-27-18-40-05.png" alt=""></p>
+<ul>
+<li>index.html</li>
+</ul>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">&quot;refresh&quot;</span>
+      <span class="hljs-attr">content</span>=<span class="hljs-string">&quot;0; URL=&apos;employees/list&apos; &quot;</span>&gt;</span>
+</code></pre>
+<ul>
+<li>now, run <code>http://localhost:8080/</code></li>
+</ul>
+<p><img src="img/2020-04-27-18-40-45.png" alt=""></p>
+<ul>
+<li>Success!!! No more 404 Redirects to <code>employees/list</code></li>
+</ul>
 
                                 
                                 </section>
@@ -1186,7 +1423,7 @@
                 </a>
                 
                 
-                <a href="../end/SUMMARY.html" class="navigation navigation-next " aria-label="Next page: End">
+                <a href="addEmployees.html" class="navigation navigation-next " aria-label="Next page: 2. Thymeleaf CRUD DB Add Employees">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -1197,7 +1434,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"1. Thymeleaf CRUD DB Get Employees","level":"4.9.1","depth":2,"next":{"title":"End","level":"5.1","depth":1,"path":"end/SUMMARY.md","ref":"end/SUMMARY.md","articles":[]},"previous":{"title":"Spring Boot Thymeleaf CRUD DB","level":"4.9","depth":1,"path":"ThymeleafCRUD/into.md","ref":"ThymeleafCRUD/into.md","articles":[{"title":"1. Thymeleaf CRUD DB Get Employees","level":"4.9.1","depth":2,"path":"ThymeleafCRUD/getEmployees.md","ref":"ThymeleafCRUD/getEmployees.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["expandable-chapters"],"pluginsConfig":{"expandable-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css"}},"file":{"path":"ThymeleafCRUD/getEmployees.md","mtime":"2020-04-27T23:49:20.407Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-04-27T23:49:27.743Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"1. Thymeleaf CRUD DB Get Employees","level":"4.9.1","depth":2,"next":{"title":"2. Thymeleaf CRUD DB Add Employees","level":"4.9.2","depth":2,"path":"ThymeleafCRUD/addEmployees.md","ref":"ThymeleafCRUD/addEmployees.md","articles":[]},"previous":{"title":"Spring Boot Thymeleaf CRUD DB","level":"4.9","depth":1,"path":"ThymeleafCRUD/into.md","ref":"ThymeleafCRUD/into.md","articles":[{"title":"1. Thymeleaf CRUD DB Get Employees","level":"4.9.1","depth":2,"path":"ThymeleafCRUD/getEmployees.md","ref":"ThymeleafCRUD/getEmployees.md","articles":[]},{"title":"2. Thymeleaf CRUD DB Add Employees","level":"4.9.2","depth":2,"path":"ThymeleafCRUD/addEmployees.md","ref":"ThymeleafCRUD/addEmployees.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["expandable-chapters"],"pluginsConfig":{"expandable-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css"}},"file":{"path":"ThymeleafCRUD/getEmployees.md","mtime":"2020-04-28T01:41:40.902Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-04-28T01:42:14.206Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
