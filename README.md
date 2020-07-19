@@ -8,12 +8,12 @@ https://novemberfall.github.io/Java-ObjectOriented/
 
 - Algorithm with java c++ javascript
 
-https://novemberfall.github.io/Algorithm-FullStack/
+https://novemberfall.github.io/programming
 
 
 - front-end
 
-https://novemberfall.github.io/Front-End_fullstack/
+https://novemberfall.github.io/Big-Front-End/
 
 
 - back-end
@@ -29,4 +29,4 @@ https://novemberfall.github.io/JavaScript-ObjectOriented/
 
 - LeetCode-Algorithm
 
-https://novemberfall.github.io/LeetCode-Algorithm/
+https://novemberfall.github.io/LeetCode-NoteBook
