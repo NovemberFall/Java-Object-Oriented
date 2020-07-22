@@ -36,6 +36,8 @@
 
 - step 1: Create `Controller Servlet`
 - create `MvcDemoServlet` in package `com.luv2code.servletdemo`
+
+
 ```java
 package com.luv2code.servletdemo;
 
@@ -60,8 +62,12 @@ public class MvcDemoServlet extends HttpServlet {
 }
 ```
 
+---
+
 - step2: Create View JSP `view_student.jsp` in web
-```jsp
+
+
+```java
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <html>
 <body>
@@ -71,7 +77,12 @@ public class MvcDemoServlet extends HttpServlet {
 </body>
 </html>
 ```
+
+
 :star: configure the web.xml
+
+
+
 ```xml
     <servlet>
         <servlet-name>MvcDemoServlet</servlet-name>
@@ -83,6 +94,8 @@ public class MvcDemoServlet extends HttpServlet {
     </servlet-mapping>
 </web-app>
 ```
+
+
 ![](img/2019-08-27-06-43-50.png)
 
 ### `More detail in MVC with Servlet and JSP`
@@ -100,6 +113,9 @@ public class MvcDemoServlet extends HttpServlet {
 ### `create Student class`
 - create a new package `com.luv2code.servletdemo.mvctwo` in src folder
 - create a class `Student`
+
+
+
 ```java
 package com.luv2code.servletdemo.mvctwo;
 
@@ -143,6 +159,8 @@ public class Student {
 
 
 ### `create StudentDataUtil`
+
+
 ```java
 package com.luv2code.servletdemo.mvctwo;
 
@@ -168,6 +186,8 @@ public class StudentDataUtil {
 
 
 ### `Create MVC Servlet`
+
+
 ```java
 package com.luv2code.servletdemo.mvctwo;
 
@@ -196,8 +216,11 @@ public class MvcDemoServletTwo extends HttpServlet {
 
 ### `Create JSP View with HTML Table`
 
+
 - create `view_students_two.jsp` in web folder
-```jsp
+
+
+```java
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <html>
 <body>
@@ -223,7 +246,10 @@ public class MvcDemoServletTwo extends HttpServlet {
 </html>
 ```
 
+
 :star: Don't forget to configure the `web.xml`
+
+
 ```xml
     <servlet>
         <servlet-name>MvcDemoServletTwo</servlet-name>
@@ -236,11 +262,15 @@ public class MvcDemoServletTwo extends HttpServlet {
     
 </web-app>
 ```
+
+
 ![](img/2019-08-27-09-02-09.png)
 ---
 - Right now we have runned the Servlet directly, I like to set up a link to the Servlet from an HTML page. 
 - I'm going to create a very simple HTML page `index.html`
 - I want to do is just have a webpage link to that'll point to my Servlet.
+
+
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -253,6 +283,8 @@ public class MvcDemoServletTwo extends HttpServlet {
 </body>
 </html>
 ```
+
+
 ![](img/2019-08-27-10-01-40.png)
 ---
 - now we click the `Link`, it will jump to our Servlet
