@@ -126,6 +126,8 @@ Item entered:<%= request.getParameter("theItem")%>
 3. Create home page to read cookies and display personalized content
 
 - create `cookies-personalize-form.html` in `web` folder
+
+
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -151,6 +153,7 @@ Item entered:<%= request.getParameter("theItem")%>
 ```
 
 - create `cookies-personalize-response.jsp` in web folder
+
 
 ```java
 <html>
@@ -179,8 +182,12 @@ Item entered:<%= request.getParameter("theItem")%>
 </body>
 </html>
 ```
+
+
 - since return to `cookies-homepage.jsp`
 - we create a `cookies-homepage.jsp` in web folder
+
+
 ```java
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
@@ -230,6 +237,9 @@ Item entered:<%= request.getParameter("theItem")%>
 </html>
 
 ```
+
+---
+
 ![](img/2019-08-25-14-01-17.png)
 
 ---
