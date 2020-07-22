@@ -88,7 +88,10 @@
 - import mysql-connector-java libray
 ---
 ![](img/2019-08-27-11-56-32.png)
+
 - create `context.xml`
+
+
 ```xml
 <Context>
     <Resource name="jdbc/web_student_tracker"
@@ -99,6 +102,8 @@
               url="jdbc:mysql://localhost:3306/web_student_tracker?useSSL=false"/>
 </Context>
 ```
+
+
 - create a package `com.luv2code.web.jdbc` in src folder
 ---
 - create a Test Servlet with JDBC, named `TestServlet` in package `com.luv2code.web.jdbc`
@@ -117,6 +122,9 @@
 ---
 - import the required library `mysql-connector-java-8.0.17.jar`
 - configure the required `context.xml`
+
+
+
 ```xml
 <Context>
   <Resource name="jdbc/web_student_tracker" 
@@ -127,8 +135,14 @@
                url="jdbc:mysql://localhost:3306/web_student_tracker?useSSL=false&amp;serverTimezone=UTC"/>
 </Context>
 ```
+
+
 ---
+
 - `TestServlet.java`
+
+
+
 ```java
 package com.luv2code.web.jdbc;
 
@@ -196,6 +210,8 @@ public class TestServlet extends HttpServlet {
 }
 
 ```
+
+
 ![](img/2019-08-28-08-22-53.png)
 - this result is waht I expect
 ---
@@ -220,9 +236,14 @@ public class TestServlet extends HttpServlet {
 - List Students
 ![](img/2019-08-28-08-30-44.png)
 ---
+
+
 - To Do List
 1. Create Student.java
 - in package `com.luv2code.web.jdbc`, create a Student.java
+
+
+
 ```java
 package com.luv2code.web.jdbc;
 public class Student {
@@ -284,8 +305,14 @@ public class Student {
 	}
 }
 ```
+
 ---
-2. Create StudentDBUtil.java
+
+
+
+1. Create StudentDBUtil.java
+
+
 ```java
 package com.luv2code.web.jdbc;
 
@@ -363,8 +390,14 @@ public class StudentDbUtil {
 	}
 }
 ```
+
+
 ---
-3. Create a new Servlet `StudentControllerServlet.java`
+
+1. Create a new Servlet `StudentControllerServlet.java`
+
+
+
 ```java
 package com.luv2code.web.jdbc;
 
@@ -433,9 +466,13 @@ public class StudentControllerServlet extends HttpServlet {
 	}
 }
 ```
+
 ---
 
-4. Create JSP page: `list-students.jsp` in `WebContent` folder
+1. Create JSP page: `list-students.jsp` in `WebContent` folder
+
+
+
 ```jsp
 <%@ page import="java.util.*, com.luv2code.web.jdbc.*"%>
 <!DOCTYPE html>
@@ -456,10 +493,15 @@ public class StudentControllerServlet extends HttpServlet {
 </body>
 </html>
 ```
+
+
 - Run `StudentControllerServlet` on Server
 ![](img/2019-08-28-11-10-31.png)
 ---
 - updating `list-students.jsp`
+
+
+
 ```jsp
 <%@ page import="java.util.*, com.luv2code.web.jdbc.*"%>
 <!DOCTYPE html>
@@ -504,6 +546,8 @@ public class StudentControllerServlet extends HttpServlet {
 </body>
 </html>
 ```
+
+
 - refresh the page
 ![](img/2019-08-28-11-17-17.png)
 ---
@@ -511,6 +555,8 @@ public class StudentControllerServlet extends HttpServlet {
 ### `List Student - Making it Pretty with Cascading Style Sheets(css)`
 
 - create a folder `css` in `WebContent`
+
+
 ```css
 html, body{
 	margin-left:15px; margin-right:15px; 
@@ -560,7 +606,9 @@ h2{
 	text-align:center;	
 }
 ```
+
 ![](img/2019-08-28-17-23-14.png)
+
 ---
 
 ### `Adding JSTL Functionality`
@@ -574,10 +622,15 @@ h2{
 - Now updating JSP to use JSTL tags
 - in `list-students.jsp`
 - we delete `<%@ page import="java.util.*, com.luv2code.web.jdbc.*"%>`
+
+
 - paste this statement: `<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>`
 
 - updating `list-students.jsp`
-```jsp
+
+
+
+```java
 <%-- <%@ page import="java.util.*, com.luv2code.web.jdbc.*"%> --%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
@@ -616,6 +669,7 @@ h2{
 </body>
 </html>
 ```
+
 ---
 
 
@@ -636,6 +690,8 @@ h2{
 ![](img/2019-08-29-04-43-06.png)
 ---
 - create a `web.xml` in `WEB-INF` folder
+
+
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
@@ -648,6 +704,8 @@ h2{
 ```
 
 - create a `index.html` in `WebContent`
+
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -656,7 +714,10 @@ h2{
 </body>
 </html>
 ```
+
 - now Add servlet as welcome file
+
+
 ```xml
 	<welcome-file-list>
 		<welcome-file>StudentControllerServlet</welcome-file>
@@ -664,6 +725,7 @@ h2{
 	  	<welcome-file>index.html</welcome-file>
 	</welcome-file-list>
 ```
+
 - typing: `http://localhost:8080/web-student-tracker/`
 ![](img/2019-08-29-04-54-42.png)
 ---
@@ -688,6 +750,8 @@ h2{
 ### `Setting up the Button`
 
 - `add student` Botton into `list-students.jsp`
+
+
 ```jsp
 <body>
 	<div id="wrapper">
@@ -705,9 +769,13 @@ h2{
 				class="add-student-button"		
 			/>
 ```
+
 ![](img/2019-08-29-05-27-10.png)
 ---
+
 - create `add-student-form.jsp` in WebContent folder
+
+
 ```html
 <html>
 <body>
@@ -715,11 +783,16 @@ hello ... form placeholder
 </body>
 </html>
 ```
+
+
 ![](img/1.gif)
 ---
 
 ### `Create HTML form for new student`
+
 - create `add-student-style.css` in css folder
+
+
 ```css
 form {
 	margin-top: 10px;
@@ -760,8 +833,12 @@ tr {
 	text-align:left;	
 }
 ```
+
 ---
+
 - update `add-student-form.jsp`
+
+
 ```jsp
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
@@ -823,7 +900,10 @@ tr {
 
 
 ### `Add Student-Developing the Servlet`
+
 - Update `StudentControllerServlet` 
+
+
 ```java
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
@@ -876,7 +956,10 @@ tr {
 
 
 ### `Add Student- Creating the JDBC Code`
+
 - updating `StudentDbUtil`'s addStudent() method
+
+
 ```java
 	public void addStudent(Student theStudent) throws Exception  {
 		Connection myConn = null;
@@ -906,14 +989,20 @@ tr {
 		}
 	}
 ```
+
+
 ![](img/2.gif)
 ---
 
 ### `Update Student - Creating the Update Link`
+
 - update Student
 ![](img/2019-08-29-08-18-10.png)
 ---
+
 - step1: Update `list-students.jsp`
+
+
 ```jsp
 			<table>
 				<tr>
@@ -939,9 +1028,12 @@ tr {
 
 			</table>
 ```
+
 ![](img/2019-08-29-08-49-55.png)
 ---
 - we can copy the link of `Update`
+
+
 ```html
 http://localhost:8080/web-student-tracker/StudentControllServlet?command=LOAD&studentId=5
 ```
@@ -955,12 +1047,17 @@ http://localhost:8080/web-student-tracker/StudentControllServlet?command=LOAD&st
 ---
 - in `StudentControllerServlet`.java
 - updating the method `doGet`
+
+
 ```java
 case "LOAD":
 				loadStudent(request,response);
 				break;
 ```
+
 - update `loadStudent()` in `StudentControllerServlet`.java
+
+
 ```java
 	private void loadStudent(HttpServletRequest request, HttpServletResponse response) throws Exception {
 		//read student id from form data
@@ -977,7 +1074,10 @@ case "LOAD":
 		dispatcher.forward(request, response);
 	}
 ```
+
 - updating `getStudent()` in StudentDbUtil
+
+
 ```java
 public Student getStudent(String theStudentId) throws Exception {
 		
@@ -1028,9 +1128,16 @@ public Student getStudent(String theStudentId) throws Exception {
 		
 	}
 ```
+
+
 ---
+
 ### `update` form and pre-populate
+
+
 - create `update-student-form.jsp`
+
+
 ```jsp
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
@@ -1087,8 +1194,12 @@ public Student getStudent(String theStudentId) throws Exception {
 </body>
 </html>
 ```
+
 ---
+
 - add `updateStudent()` into `StudentDbUtil.java`
+
+
 ```java
 public void updateStudent(Student theStudent) throws Exception {
 		Connection myConn = null;
@@ -1117,8 +1228,12 @@ public void updateStudent(Student theStudent) throws Exception {
 		}
 	}
 ```
+
 ---
+
 - update doGet in `StudentControllerServlet`
+
+
 ```java
 protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
@@ -1157,6 +1272,8 @@ protected void doGet(HttpServletRequest request, HttpServletResponse response)
 		}
 	}
 ```
+
+
 ![](img/2019-08-29-11-44-33.png)
 - click Update
 ![](img/2019-08-29-11-44-50.png)
@@ -1169,9 +1286,13 @@ protected void doGet(HttpServletRequest request, HttpServletResponse response)
 ---
 
 ### `Delete Student - Creating the Delete Link`
+
 - Add `Delete` link to JSP
 
 - update `list-student.jsp`
+
+
+
 ```jsp
 				<c:forEach var="tempStudent" items="${STUDENT_LIST}">
 					<!-- set up a link for each student -->
@@ -1198,9 +1319,14 @@ protected void doGet(HttpServletRequest request, HttpServletResponse response)
 					</tr>
 				</c:forEach>          
 ```
+
+
 ![](img/2019-08-30-12-07-15.png)
 ---
 - Prompt user before deleting - JavaScript
+
+
+
 ```jsp
 					<tr>
 						<td>${tempStudent.firstName}</td>
@@ -1215,6 +1341,8 @@ protected void doGet(HttpServletRequest request, HttpServletResponse response)
 						</td>
 					</tr>
 ```
+
+
 - if you click delete
 ![](img/2019-08-30-12-25-23.png)
 ---
@@ -1223,6 +1351,9 @@ protected void doGet(HttpServletRequest request, HttpServletResponse response)
 
 - Add code for "Delete" to StudentControllerServlet:
 - updating `doGet()` from `StudentControllerServlet`
+
+
+
 ```java
 protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
@@ -1272,8 +1403,13 @@ protected void doGet(HttpServletRequest request, HttpServletResponse response)
 		
 	}
 ```
+
 ---
+
 - updating `StudentDbUtil.java`
+
+
+
 ```java
 	public void deleteStudent(String theStudentId) throws Exception {
 		Connection myConn = null;
@@ -1303,6 +1439,7 @@ protected void doGet(HttpServletRequest request, HttpServletResponse response)
 		}
 	}
 ```
+
 ---
 ![](img/3.gif)
 
