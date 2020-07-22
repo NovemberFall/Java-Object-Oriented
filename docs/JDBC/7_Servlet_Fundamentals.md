@@ -21,6 +21,7 @@
 ---
 
 - Servlet Configuration on `web.xml`
+  
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
@@ -39,18 +40,25 @@
     </servlet-mapping>
 </web-app>
 ```
+
 - run the server
+  
 ![](img/2019-08-27-01-24-06.png)
 ---
 
 - The 2nd way for Servlet Configuration in `HelloWorldServlet.java`
+  
 ```java
 @WebServlet(name = "HelloWorldServlet", urlPatterns = {"/hello"})
 public class HelloWorldServlet extends HttpServlet {
 ```
+
 - input `http://localhost:8080/servletdemo_war_exploded/hello`
+  
 ![](img/2019-08-27-01-30-24.png)
+
 - we also get the same result
+
 ---
 
 
@@ -88,6 +96,8 @@ public class HelloWorldServlet extends HttpServlet {
 ### `Reading HTML Form Data with Servlets` code example:
 
 - create `student.form.html` in web
+
+
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -102,7 +112,10 @@ public class HelloWorldServlet extends HttpServlet {
 </body>
 </html>
 ```
+
 - create `StudentServlet` in package `com.luv2code.servletdemo`
+
+
 ```java
 
 @WebServlet(name = "StudentServlet")
@@ -127,8 +140,13 @@ public class StudentServlet extends HttpServlet {
     }
 }
 ```
+
+---
+
 :star: Note: we still need configure the environment
+
 - altering the `web.xml`
+
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
@@ -155,9 +173,13 @@ public class StudentServlet extends HttpServlet {
 </web-app>
 ```
 
+
 - run the .html on the Tomcat server
+  
 ![](img/2019-08-27-04-44-14.png)
+
 ---
+
 ![](img/2019-08-27-04-44-29.png)
 
 
@@ -203,6 +225,8 @@ public class StudentServlet extends HttpServlet {
 
 - code example
 - first, configure our `web.xml`
+
+
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
@@ -220,8 +244,11 @@ public class StudentServlet extends HttpServlet {
     </context-param>  
 </web-app>
 ```
+
 ---
+
 - create `TestParamServlet` in package `com.luv2code.servletdemo`
+
 ```java
 package com.luv2code.servletdemo;
 
@@ -254,5 +281,7 @@ public class TestParamServlet extends HttpServlet {
     }
 }
 ```
+
+
 ![](img/2019-08-27-05-18-37.png)
 ---
