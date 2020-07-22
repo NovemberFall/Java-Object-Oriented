@@ -36,7 +36,8 @@
 ---
 
 ![](img/2019-08-25-10-17-47.png)
-```java
+
+```html
 <%@ page import="java.util.*" %>
 <html>
 <head>
@@ -155,7 +156,7 @@ Item entered:<%= request.getParameter("theItem")%>
 - create `cookies-personalize-response.jsp` in web folder
 
 
-```java
+```html
 <html>
 <head>
     <title>Confirmation</title>
@@ -188,7 +189,7 @@ Item entered:<%= request.getParameter("theItem")%>
 - we create a `cookies-homepage.jsp` in web folder
 
 
-```java
+```html
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <body>
