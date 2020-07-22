@@ -153,6 +153,7 @@ Item entered:<%= request.getParameter("theItem")%>
 </html>
 ```
 
+---
 - create `cookies-personalize-response.jsp` in web folder
 
 
@@ -184,6 +185,7 @@ Item entered:<%= request.getParameter("theItem")%>
 </html>
 ```
 
+---
 
 - since return to `cookies-homepage.jsp`
 - we create a `cookies-homepage.jsp` in web folder
