@@ -17,6 +17,8 @@
 ---
 
 - create `function-test.jsp`
+
+
 ```java
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
@@ -33,8 +35,9 @@ Uppercase version of the string <b>${data}</b>: ${fn:toLowerCase(data)}
 Does the sting <b>${data}</b> start with <b>luv</b>?: ${fn:startsWith(data, "luv")}
 </body>
 </html>
-
 ```
+
+
 ![](img/2019-08-26-09-35-52.png)
 
 
@@ -57,6 +60,8 @@ Does the sting <b>${data}</b> start with <b>luv</b>?: ${fn:startsWith(data, "luv
 ---
 
 - create `split-join-test.jsp`
+
+
 ```java
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
@@ -79,6 +84,9 @@ Result of joining: ${fun}
 </body>
 </html>
 ```
+
+
+
 ![](img/2019-08-26-09-46-27.png)
 
 
