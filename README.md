@@ -30,3 +30,8 @@ https://novemberfall.github.io/JavaScript-ObjectOriented/
 - LeetCode-Algorithm
 
 https://novemberfall.github.io/LeetCode-NoteBook
+
+
+- Python
+
+https://novemberfall.github.io/Python-100days/
