@@ -47,6 +47,9 @@
     * [What are REST Web Services?](springRest/web.md)
 * [Spring REST JSON Data Buinding](springRest/json.md)
     * [JSON Jackson Demo - Set Up Maven](springRest/demo.md)
+* [Spring REST Create a Spring REST Controller](springRest/con.md)
+
+-----
 * [SpringBoot](sb/into.md)
     * [1. What is SpringBoot](sb/sbIntro.md)
     * [2. Create a Project with SpringBoot initializr](sb/init.md)
