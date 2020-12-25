@@ -50,6 +50,7 @@
 * [Spring REST Create a Spring REST Controller](springRest/con.md)
     * [Set Up Maven Project](springRest/pj.md)
     * [App Enhancement With Default Page](springRest/pj1.md)
+    * [Retrieve POJOs as JSON](springRest/pj2.md)
   
 -----
 * [SpringBoot](sb/into.md)
