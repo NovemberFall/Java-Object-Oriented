@@ -43,6 +43,8 @@
     * [1. Environment Configuration](s1/ec.md)
     * [2. What is Inversion of Control?](s1/ioc.md)
     * [3. Spring Dependency Injection](s1/DI.md)
+* [Spring REST](springRest/intro.md)
+    * [What are REST Web Services?](springRest/web.md)
 * [SpringBoot](sb/into.md)
     * [1. What is SpringBoot](sb/sbIntro.md)
     * [2. Create a Project with SpringBoot initializr](sb/init.md)
