@@ -45,6 +45,7 @@
     * [3. Spring Dependency Injection](s1/DI.md)
 * [Spring REST](springRest/intro.md)
     * [What are REST Web Services?](springRest/web.md)
+* [Spring REST JSON Data Buinding](springRest/json.md)
 * [SpringBoot](sb/into.md)
     * [1. What is SpringBoot](sb/sbIntro.md)
     * [2. Create a Project with SpringBoot initializr](sb/init.md)
