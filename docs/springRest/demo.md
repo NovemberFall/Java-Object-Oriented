@@ -212,8 +212,40 @@ public class testJsonFile {
 }
 ```
 
+---
+
+## JSON Jackson Demo - Ignore Properties
+
+- add some new field `company` into `data/sample-full.json`
 
 
+```json
+{
+	"id": 14,
+	"firstName": "Mario",
+	"lastName": "Rossi",
+	"active": true,
+	"address": {
+		"street": "100 Main St",
+		"city": "Philadelphia",
+		"state": "Pennsylvania",
+		"zip": "19103",
+		"country": "USA"
+	},
+	"languages" : ["Java", "C#", "Python", "Javascript"],
+	"company" : "Google INC"
+}
+```
+
+- Now see what happen? => it will generate a error, an Unrecongnized field `company`
+
+![](img/2020-12-25-12-59-56.png)
+
+### Add a special annotation to ignore unknown properties
+
+![](img/2020-12-25-13-03-14.png)
+
+- rerun it, this time, you won't see any error.
 
 
 
