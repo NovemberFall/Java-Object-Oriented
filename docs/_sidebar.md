@@ -44,6 +44,7 @@
     * [2. What is Inversion of Control?](s1/ioc.md)
     * [3. Spring Dependency Injection](s1/DI.md)
 * [Spring MVC](s2/intro.md)
+    * [1. Spring MVC Configuration-JAR FILES](s2/jar.md)  
 * [Spring REST](springRest/intro.md)
     * [What are REST Web Services?](springRest/web.md)
 * [Spring REST JSON Data Binding](springRest/json.md)
