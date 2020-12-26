@@ -51,7 +51,8 @@
     * [Set Up Maven Project](springRest/pj.md)
     * [App Enhancement With Default Page](springRest/pj1.md)
     * [Retrieve POJOs as JSON](springRest/pj2.md)
-    * [Retrieve POJOs as JSON - Create POJO](springRest/pj3.md)
+    * [Create POJO, REST Controller, Test](springRest/pj3.md)
+    * [Using @PathVariable for REST Endpoints](springRest/pj4.md)
   
 -----
 * [SpringBoot](sb/into.md)
