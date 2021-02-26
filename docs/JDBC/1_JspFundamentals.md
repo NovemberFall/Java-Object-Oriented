@@ -4,6 +4,7 @@
 ![](img/2019-08-25-03-28-02.png)
 
 - here is an example
+
 ![](img/2019-08-25-03-30-02.png)
 
 
@@ -25,10 +26,12 @@
   </body>
 </html>
 ```
+
 ![](img/2019-08-25-04-53-04.png)
 
 
 ### `JSP Scriptlets` (脚本小程序)
+
 - now create a new `scriptlet.jsp`
 
 ```java
@@ -41,15 +44,19 @@
     %>
 </body>
 ```
+
 ![](img/2019-08-25-05-06-40.png)
 
 
 
 ### `JSP Declarations`
+
 - add a new file `declaration.jsp`
 
-- Declare a method in the JSP page
-- Call the method in the same JSP page
+- Declare a method in the `JSP` page
+
+- Call the method in the same `JSP` page
+
 ```java
 <body>
 <%!
@@ -60,16 +67,21 @@
 Lower case "Hello World": <%= makeItLower("Hello World")%>
 </body>
 ```
+
 ![](img/2019-08-25-05-16-05.png)
 
 ### `Calling a java class from JSP`
+
 - Minimize the `scriptlets` and `declarations` in a JSP
 
 1. Create Java class
+
 2. Call Java class from JSP
 
 :star: create a package named `com.luv2code.jsp`
+
 - create a class named `FunUtils.java` in package `com.luv2code.jsp` 
+
 ```java
 package com.luv2code.jsp;
 public class FunUtils {
@@ -79,8 +91,10 @@ public class FunUtils {
 }
 ```
 - create a class named `fun-test.jsp` in `web` folder
+
 ![](img/2019-08-25-05-30-58.png)
-```jsp
+
+```java
 <%@ page import="com.luv2code.jsp.*" %>
 <html>
 <body>
@@ -88,18 +102,24 @@ Let's have some fun: <%=FunUtils.makeItLower("FUN FUN FUN")%>
 </body>
 </html>
 ```
+
 ![](img/2019-08-25-05-36-03.png)
 
 
 ### `Built-In Server Objects`
+
 - List of commonly used JSP objects
+
 ![](img/2019-08-25-05-40-28.png)
+
 ---
+
 ![](img/2019-08-25-05-42-15.png)
 
 
 - create a `builtin-test.jsp`
-```jsp
+
+```java
 <body>
 <h3>JSP Built-In Objects</h3>
 Request user agent: <%=request.getHeader("User-Agent")%>
@@ -107,6 +127,7 @@ Request user agent: <%=request.getHeader("User-Agent")%>
 Request language: <%=request.getLocale()%>
 </body>
 ```
+
 ![](img/2019-08-25-05-50-21.png)
 
 
@@ -115,21 +136,27 @@ Request language: <%=request.getLocale()%>
 ### `Including Files in JSP`
 
 :star: how to use JSP for including other files 
+
 ![](img/2019-08-25-05-57-26.png)
 
 - create a `my-header.html` in `web` folder
+  
 ```html
 <h1 align="center">JSP Tutorial</h1>
 ```
 
 - create a `my-footer.jsp` in `web` folder
-```jsp
+
+
+```java
 <p align="center">
     Last updated: <%=new java.util.Date()%>
 </p>
 ```
 
 - create a `homepage.jsp` in `web` folder
+
+
 ```html
 <html>
 <body>
@@ -142,7 +169,10 @@ Blah blah blah ... <br><br>
 </body>
 </html>
 ```
+
 ![](img/2019-08-25-06-10-15.png)
+
 - so far so good!
+
 - Great!
 
