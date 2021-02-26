@@ -32,6 +32,8 @@ class CodeToRun implements Runnable{
 }
 ```
 
+---
+
 ## Or we can also call the Ruunable
 
 ```java
@@ -45,6 +47,7 @@ public class main2 {
 ![](img/2020-03-16-18-26-56.png)
 
 
+
 ### Every lambda expression got three parts
 
 1. argument list
@@ -56,6 +59,7 @@ public class main2 {
 
 - example 3:
   
+
 ```java
 public class main3 {
     public static void main(String[] args) {
@@ -67,6 +71,8 @@ public class main3 {
     }
 }
 ```
+
+---
 
 ## further example:
 
@@ -132,14 +138,18 @@ class Employee{
 ---
 
 
+
 ## 
+
 
 - remember every object contains an `equal` method and that means every instance 
   that implements comparator will already have an implementation of the `equal` method 
 
 - it's a functional interface and we can use lambda instead of an anonymous class 
 
+
 ### improve to lambda
+
 
 ```java
         Collections.sort(employees, (Employee o1, Employee o2)->
@@ -153,6 +163,7 @@ class Employee{
 ![](img/2020-03-16-20-37-30.png)
 
 
+
 ### Even further
 
 ```java
@@ -163,6 +174,7 @@ class Employee{
             System.out.println(employee.getName());
         }
 ```
+
 ---
 
 
@@ -170,7 +182,7 @@ class Employee{
 
 - create a buttonFX project for javafx
 
-- add a `<Button` to sample.fxml
+- add a `<Button` to `sample.fxml`
   
 ```xml
 <?import javafx.geometry.Insets?>
@@ -183,7 +195,7 @@ class Employee{
 </GridPane>
 ```
 
-- update Controller.java
+- update `Controller.java`
 
 ```java
 package sample;
@@ -211,7 +223,7 @@ public class Controller {
   
 ![](img/2020-03-16-22-20-03.png)
 
-- improve Controller.java
+- improve `Controller.java`
   
 ```java
 package sample;
@@ -236,6 +248,7 @@ public class Controller {
 
 
 ### turn to previous example employees:
+
 
 ```java
 import java.util.*;
@@ -307,6 +320,7 @@ interface UpperConcat{
     public String upperAndConcat(String s1, String s2);
 }
 ```
+
 
 ![](img/2020-03-16-23-11-15.png)
 
