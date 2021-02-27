@@ -234,7 +234,7 @@ import javafx.scene.control.Button;
 
 
 public class Controller {
-    @FXML
+    // @FXML
     private Button clickMeButton;
 
     public void initialize() {
@@ -244,6 +244,8 @@ public class Controller {
 ```
 
 - then, the same result
+
+
 ---
 
 
