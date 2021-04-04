@@ -49,6 +49,7 @@
     * [3. Creat Spring Home Controller and View](s2/cv.md)  
     * [4. Reading HTML Form Data](s2/cv1.md)  
     * [5. adding Data to Spring Model](s2/cv2.md)  
+    * [6. Read HTML Form with @RequestParam](s2/mvc1.md)  
 * [Spring REST](springRest/intro.md)
     * [What are REST Web Services?](springRest/web.md)
 * [Spring REST JSON Data Binding](springRest/json.md)
