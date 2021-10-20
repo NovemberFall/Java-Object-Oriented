@@ -190,3 +190,20 @@ public class SupplierDemo {
         return value != null ? value : other.get();
     }
 ```
+---
+
+### 还可以继续简化
+
+```java
+public class SupplierDemo {
+    public static void main(String[] args) {
+
+        List<String> list3 = Arrays.asList();
+        System.out.println(list3.stream().findAny().orElseGet(
+                () -> "Hi Java 8 => functional interface")
+        );
+    }
+}
+```
+
+![](img/2021-10-19-21-13-07.png)
