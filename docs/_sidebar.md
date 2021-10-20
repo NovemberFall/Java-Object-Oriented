@@ -23,6 +23,8 @@
 * [Java 8](README.md)
     * [Lambda Expression](java8/lam.md)
     * [Consumer, Predicate, Supplier Example](java8/lam2.md)
+    * [Stream API | forEach, filter](java8/lam3.md)
+    * [Sort a List by Lambda](java8/lam4.md)
   
 -----
 * [JSP, Servlets and JDBC](JDBC/intro.md)
