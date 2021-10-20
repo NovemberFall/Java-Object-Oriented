@@ -1,4 +1,4 @@
-# 2. Lambda NestedBlocks
+## 2. Lambda NestedBlocks
 
 
 ### example:
@@ -81,10 +81,9 @@ class AnotherClass{
 
 - we can't see anonymous class's name, since anonymous doesn't have a 
   name which make sense
-
 - but let's use a lambda expression instead of an anonymous class
-
 - update
+  
   
 ```java
 import java.util.*;
