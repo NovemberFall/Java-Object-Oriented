@@ -20,11 +20,9 @@
     * [2. Lambda NestedBlocks](ch4/lambda_NestedBlocks.md)
 
 -----
-* [Concurrence | Threading](README.md)
-
------
-* [Networking Programming](README.md)
-
+* [Java 8](README.md)
+    * [Lambda Expression](java8/intro.md)
+  
 -----
 * [JSP, Servlets and JDBC](JDBC/intro.md)
     * [1. Jsp Fundamentals](JDBC/1_JspFundamentals.md)

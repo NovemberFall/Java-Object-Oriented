@@ -1,4 +1,4 @@
-# 1. Lambda Introduction
+## 1. Lambda Introduction
 
 ```java
 public class Main {
@@ -45,17 +45,14 @@ public class main2 {
 ```
 
 ![](img/2020-03-16-18-26-56.png)
-
+---
 
 
 ### Every lambda expression got three parts
 
-1. argument list
-   
-2. arrow token
-   
-3. body
-
+- 1. argument list
+- 2. arrow token   
+- 3. body
 
 - example 3:
   
@@ -139,9 +136,6 @@ class Employee{
 
 
 
-## 
-
-
 - remember every object contains an `equal` method and that means every instance 
   that implements comparator will already have an implementation of the `equal` method 
 
@@ -162,7 +156,7 @@ class Employee{
 
 ![](img/2020-03-16-20-37-30.png)
 
-
+---
 
 ### Even further
 
@@ -181,10 +175,9 @@ class Employee{
 ### lambda continued
 
 - create a buttonFX project for javafx
-
 - add a `<Button` to `sample.fxml`
   
-```xml
+```js
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.control.Button?>
