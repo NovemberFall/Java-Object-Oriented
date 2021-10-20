@@ -21,7 +21,8 @@
 
 -----
 * [Java 8](README.md)
-    * [Lambda Expression](java8/intro.md)
+    * [Lambda Expression](java8/lam.md)
+    * [Consumer, Predicate, Supplier Example](java8/lam2.md)
   
 -----
 * [JSP, Servlets and JDBC](JDBC/intro.md)
