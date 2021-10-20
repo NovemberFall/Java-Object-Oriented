@@ -70,8 +70,6 @@ public class CalculatorImpl{
 ---
 
 ```java
-
-```java
 interface Calculator {
     int substract(int e1, int e2);
 }
