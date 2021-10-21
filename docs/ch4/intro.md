@@ -1,2 +1,0 @@
-# Chapter4：Lambda
-
