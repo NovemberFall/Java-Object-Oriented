@@ -27,6 +27,7 @@
     * [Comparator.comparing](java8/comparing.md)
     * [Sort a List by Lambda](java8/lam4.md)
     * [Sort a Map by Lambda](java8/lam5.md)
+    * [map() vs. flatMap()](java8/lam6.md)
   
 -----
 * [JSP, Servlets and JDBC](JDBC/intro.md)
