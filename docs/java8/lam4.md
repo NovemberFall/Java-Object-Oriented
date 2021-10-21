@@ -196,6 +196,27 @@ public class SortListDemo {
 ### reference method
 
 ```java
+//1.
+public class SortListDemo {
+	public static void main(String[] args) {
+		List<Integer> list = new ArrayList<>();
+		list.add(8);
+		list.add(3);
+		list.add(12);
+		list.add(4);
+
+		List<Employee> employees = DataBase.getEmployees();
+
+		Collections.sort(employees, (e1, e2) -> (int) (e1.getSalary() - e2.getSalary()));
+
+		employees.stream().sorted((e1, e2) -> e1.getName().compareTo(e2.getName()))
+				.forEach(System.out::println);
+	}
+}
+
+
+
+
 public class SortListDemo {
 	public static void main(String[] args) {
 		List<Integer> list = new ArrayList<>();
