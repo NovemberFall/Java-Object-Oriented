@@ -45,11 +45,6 @@ public class SortListDemo {
 ```java
 public class SortListDemo {
 	public static void main(String[] args) {
-		List<Integer> list = new ArrayList<>();
-		list.add(8);
-		list.add(3);
-		list.add(12);
-		list.add(4);
 
 		List<Employee> employees = DataBase.getEmployees();
 		Collections.sort(employees, new MyComparator());
@@ -79,11 +74,6 @@ class MyComparator implements Comparator<Employee> {
 ```java
 public class SortListDemo {
 	public static void main(String[] args) {
-		List<Integer> list = new ArrayList<>();
-		list.add(8);
-		list.add(3);
-		list.add(12);
-		list.add(4);
 
 		List<Employee> employees = DataBase.getEmployees();
 		Collections.sort(employees, new Comparator<Employee>() {
@@ -124,11 +114,6 @@ public class DataBase {
 
 public class SortListDemo {
 	public static void main(String[] args) {
-		List<Integer> list = new ArrayList<>();
-		list.add(8);
-		list.add(3);
-		list.add(12);
-		list.add(4);
 
 		List<Employee> employees = DataBase.getEmployees();
 
@@ -152,11 +137,6 @@ public class SortListDemo {
 ```java
 public class SortListDemo {
 	public static void main(String[] args) {
-		List<Integer> list = new ArrayList<>();
-		list.add(8);
-		list.add(3);
-		list.add(12);
-		list.add(4);
 
 		List<Employee> employees = DataBase.getEmployees();
 
@@ -176,11 +156,6 @@ public class SortListDemo {
 ```java
 public class SortListDemo {
 	public static void main(String[] args) {
-		List<Integer> list = new ArrayList<>();
-		list.add(8);
-		list.add(3);
-		list.add(12);
-		list.add(4);
 
 		List<Employee> employees = DataBase.getEmployees();
 
@@ -199,11 +174,6 @@ public class SortListDemo {
 //1.
 public class SortListDemo {
 	public static void main(String[] args) {
-		List<Integer> list = new ArrayList<>();
-		list.add(8);
-		list.add(3);
-		list.add(12);
-		list.add(4);
 
 		List<Employee> employees = DataBase.getEmployees();
 
@@ -219,11 +189,6 @@ public class SortListDemo {
 
 public class SortListDemo {
 	public static void main(String[] args) {
-		List<Integer> list = new ArrayList<>();
-		list.add(8);
-		list.add(3);
-		list.add(12);
-		list.add(4);
 
 		List<Employee> employees = DataBase.getEmployees();
 
