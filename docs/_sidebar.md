@@ -26,6 +26,7 @@
     * [Stream API | forEach, filter](java8/lam3.md)
     * [Comparator.comparing](java8/comparing.md)
     * [Sort a List by Lambda](java8/lam4.md)
+    * [Sort a Map by Lambda](java8/lam5.md)
   
 -----
 * [JSP, Servlets and JDBC](JDBC/intro.md)
