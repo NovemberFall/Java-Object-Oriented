@@ -422,25 +422,92 @@ public class BiConsumerExample implements BiConsumer<String, Integer> {
 
 
 
+```java
+public class BiPredicateExample {
+    public static void main(String[] args) {
+        BiPredicate<String, String> biPredicate = new BiPredicate<String, String>() {
+            @Override
+            public boolean test(String s1, String s2) {
+                return s1.equals(s2);
+            }
+        };
+        System.out.println(biPredicate.test("BiPredicate","BiPredicate"));
+    }
+}
+// true
+```
+---
 
-
+- using lambda:
 
 ```java
+public class BiPredicateExample {
+    public static void main(String[] args) {
+        BiPredicate<String, String> biPredicate = (o1, o2) -> o1.equals(o2);
+        System.out.println(biPredicate.test("BiPredicate","BiPredicate"));
+    }
+}
+// true
 ```
 ---
 
 
 ```java
+public class BiPredicateExample {
+    public static void main(String[] args) {
+        BiPredicate<String, String> lengthPredicate = (s1, s2) -> s1.length() == s2.length();
+        System.out.println(lengthPredicate.test("BiPredicate","BiPredicate"));
+    }
+}
+// true
 ```
 ---
 
+- and() 源码：
 
 ```java
+default BiPredicate<T, U> and(BiPredicate<? super T, ? super U> other) {
+    Objects.requireNonNull(other);
+    return (T t, U u) -> test(t, u) && other.test(t, u);
+}
 ```
----
-
-
 
 ```java
+public class BiPredicateExample {
+    public static void main(String[] args) {
+        BiPredicate<String, String> equalsPredicate = (o1, o2) -> o1.equals(o2);
+        BiPredicate<String, String> lengthPredicate = (s1, s2) -> s1.length() == s2.length();
+
+        boolean output = lengthPredicate.and(equalsPredicate).test("hello", "hello");
+        System.out.println("output :" + output);
+    }
+}
 ```
+
+![](img/2021-10-21-11-56-35.png)
 ---
+
+### or() 
+
+- 源码：
+
+```java
+default BiPredicate<T, U> or(BiPredicate<? super T, ? super U> other) {
+    Objects.requireNonNull(other);
+    return (T t, U u) -> test(t, u) || other.test(t, u);
+}
+```
+
+```java
+public class BiPredicateExample {
+    public static void main(String[] args) {
+        BiPredicate<String, String> equalsPredicate = (o1, o2) -> o1.equals(o2);
+        BiPredicate<String, String> lengthPredicate = (s1, s2) -> s1.length() == s2.length();
+
+        boolean orOutput = lengthPredicate.or(equalsPredicate).test("hello", "hello");
+        System.out.println("orOutput :" + orOutput);
+    }
+}
+```
+
+![](img/2021-10-21-11-59-03.png)
