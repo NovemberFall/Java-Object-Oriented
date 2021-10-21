@@ -29,6 +29,7 @@
     * [Sort a Map by Lambda](java8/lam5.md)
     * [map() vs. flatMap()](java8/lam6.md)
     * [Debug Java8 Stream Pipeline With Intellij](java8/debug.md)
+    * [BiFunction, BiConsumer & BiPredicate Interface](java8/lam7.md)
   
 -----
 * [JSP, Servlets and JDBC](JDBC/intro.md)
