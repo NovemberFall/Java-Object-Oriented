@@ -130,3 +130,60 @@ public class ComparatorTest {
 
 ### 使用 Comparator.reversed 进行排序, 返回相反的排序规则
 
+```java
+public class ComparatorTest {
+
+    public static void main(String[] args) {
+
+        List<Employee> employees = DataBase.getEmployees();
+
+        Collections.sort(employees, Comparator.comparing(Employee::getName).reversed());
+        employees.stream().forEach(System.out::println);
+    }
+}
+```
+
+![](img/2021-10-20-22-50-46.png)
+---
+
+### 使用 Comparator.nullsFirst进行排序
+
+- 当集合中存在null元素时，可以使用针对null友好的比较器，null元素排在集合的最前面
+
+```java
+public class ComparatorTest {
+
+    public static void main(String[] args) {
+
+        List<Employee> employees = DataBase.getEmployees();
+        employees.add(null);
+
+        Collections.sort(employees, 
+                        Comparator.nullsFirst(Comparator.comparing(Employee::getName)));
+        employees.stream().forEach(System.out::println);
+    }
+}
+```
+
+![](img/2021-10-20-22-54-26.png)
+---
+
+### 使用 Comparator.thenComparing 排序
+
+- 首先使用 name 排序，紧接着在使用salary 排序，来看下使用效果
+
+```java
+public class ComparatorTest {
+
+    public static void main(String[] args) {
+
+        List<Employee> employees = DataBase.getEmployees();
+        Collections.sort(employees, Comparator.comparing(Employee::getName)
+                                    .thenComparing(Employee::getSalary));
+
+        employees.stream().forEach(System.out::println);
+    }
+}
+```
+
+![](img/2021-10-20-22-58-24.png)
