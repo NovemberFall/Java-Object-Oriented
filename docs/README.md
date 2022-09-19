@@ -1,4 +1,4 @@
-# Java-Object-Oriented
+## Java-Object-Oriented
 Java Object-Oriented | NetWorking programming | Multi-Threading
 
 https://novemberfall.github.io/Java-ObjectOriented/
@@ -14,12 +14,6 @@ https://novemberfall.github.io/programming
 - front-end
 
 https://novemberfall.github.io/Big-Front-End/
-
-
-- back-end
-
-https://novemberfall.github.io/Java-backEnd-fullstack/
-
 
 
 - JavaScript Object-Oriented | Data Structure
