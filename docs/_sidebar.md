@@ -30,9 +30,7 @@
         * [4. byte Stream](ch2/byteStream.md)
 
 -----
-* [======]
-* [Legacy] 
-* [======]
+* [The following is Legacy]() 
 -----
 * [SpringBoot](sb/into.md)
     * [1. What is SpringBoot](sb/sbIntro.md)
