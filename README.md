@@ -16,12 +16,6 @@ https://novemberfall.github.io/programming
 https://novemberfall.github.io/Big-Front-End/
 
 
-- back-end
-
-https://novemberfall.github.io/Java-backEnd-fullstack/
-
-
-
 - JavaScript Object-Oriented | Data Structure
 
 https://novemberfall.github.io/JavaScript-ObjectOriented/
