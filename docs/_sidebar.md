@@ -22,7 +22,7 @@
     * [4. callback by Interface](ch1/callback.md)
     * [5. comparable Interface](ch1/comparableInterface.md)
     * [6. Hierarchy Of ExceptionClasses](ch1/HierarchyOfExceptionClasses.md)
-* [Generic]()
+* [Generic](generic/intro.md)
 
 -----
 * [The following is Legacy]() 
