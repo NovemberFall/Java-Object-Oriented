@@ -15,20 +15,14 @@
     * [CompletableFuture](java8/lam8.md)
 
 -----
-* [Java Syntax](README.md)
-    * [Class Object-Oriented](ch1/intro.md)
-        * [1. Concept Of Inheritance](ch1/ConceptOfInheritance.md)
-        * [2. Abstract Class](ch1/Abstract_class.md)
-        * [3. Interface](ch1/interface.md)
-        * [4. callback by Interface](ch1/callback.md)
-        * [5. comparable Interface](ch1/comparableInterface.md)
-        * [6. Hierarchy Of ExceptionClasses](ch1/HierarchyOfExceptionClasses.md)
-    * [I/O Stream](ch2/intro.md)
-        * [1. IO Stream 1](ch2/IOstream-1.md)
-        * [2. IO Stream 2](ch2/IOstream-2.md)
-        * [3. Output Stream](ch2/outputStream.md)
-        * [4. byte Stream](ch2/byteStream.md)
-    * 
+* [Class Object-Oriented](ch1/intro.md)
+    * [1. Concept Of Inheritance](ch1/ConceptOfInheritance.md)
+    * [2. Abstract Class](ch1/Abstract_class.md)
+    * [3. Interface](ch1/interface.md)
+    * [4. callback by Interface](ch1/callback.md)
+    * [5. comparable Interface](ch1/comparableInterface.md)
+    * [6. Hierarchy Of ExceptionClasses](ch1/HierarchyOfExceptionClasses.md)
+* [Generic]()
 
 -----
 * [The following is Legacy]() 
