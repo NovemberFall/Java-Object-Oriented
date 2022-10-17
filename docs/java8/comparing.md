@@ -32,7 +32,7 @@ public static <T, U extends Comparable<? super U>> Comparator<T> comparing(
 ---
 
 - 其返回值是 `(c1, c2) -> keyExtractor.apply(c1).compareTo(keyExtractor.apply(c2))`
-  一个lambda表达式，也就是一个Compator 。所以上面那个例子也可以改造成 如下，
+  一个lambda表达式，也就是一个Comparator 。所以上面那个例子也可以改造成 如下，
 
 
 ```java
