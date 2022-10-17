@@ -1,5 +1,7 @@
 ## Comparator.comparing
 
+![](img/2022-10-17-11-31-03.png)
+
 - srot method:
 
 ```java
@@ -14,6 +16,7 @@ default void sort(Comparator<? super E> c) {
 }
 ```
 ---
+![](img/2022-10-17-11-47-54.png)
 
 - 查看 Comparator 类内部实现，还有一个 comparing 方法，实现如下，
 
