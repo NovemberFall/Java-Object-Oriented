@@ -5,6 +5,7 @@
 * [Java 8](README.md)
     * [Lambda Expression](java8/lam.md)
     * [Consumer, Predicate, Supplier Example](java8/lam2.md)
+    * [Stream API | Commonly Used](java8/api.md)
     * [Stream API | forEach, filter](java8/lam3.md)
     * [Comparator.comparing](java8/comparing.md)
     * [Sort a List by Lambda](java8/lam4.md)
