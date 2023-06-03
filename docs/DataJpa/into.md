@@ -1,2 +1,0 @@
-# SpringBoot DATA JPA
-

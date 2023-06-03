@@ -9,8 +9,6 @@
 - Object-Oriented
 - Concurrence | Threading
 - Networking Programming
-- SpringMVC
-- SpringBoot
 
 [GitHub](https://github.com/NovemberFall)
 [Get Started](README.md)
